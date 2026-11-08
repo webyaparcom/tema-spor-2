@@ -1,0 +1,44 @@
+{
+  "name": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "status": "play",
+  "id": "kalitepolitikamiz",
+  "path": "kalitepolitikamiz",
+  "category": "",
+  "text": {
+    "tr": "<h2>Kalite Politikamız</h2>\n<p>Sertifikalı eğitmenler, ekipman bakımı, hijyen ve sağlık beyanı gerektirmeyen açık üyelik süreci kalite anlayışımızın temelidir.</p>",
+    "en": "<h2>Our quality policy</h2>\n<p>Certified instructors, equipment maintenance, hygiene and a clear membership process are the basis of our quality approach.</p>",
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>المدربون المعتمدون وصيانة المعدات والنظافة وعملية عضوية واضحة هي أساس نهجنا في الجودة.</p>"
+  },
+  "desing": {
+    "header": [],
+    "body": [
+      "jmv3u8",
+      "rdcnxj"
+    ],
+    "footer": []
+  },
+  "desc": {},
+  "index": 3,
+  "icon": "home",
+  "title": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "description": {
+    "tr": "Kalite politikamız",
+    "en": "Our quality policy",
+    "ar": "سياسة الجودة لدينا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "update": "2026-11-05T22:24:58.583Z",
+  "date": "2026-05-19"
+}

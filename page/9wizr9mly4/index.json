@@ -1,0 +1,39 @@
+{
+  "id": "9wizr9mly4",
+  "name": {
+    "tr": "Üyelik Paketleri",
+    "en": "Membership Packages",
+    "ar": "باقات العضوية"
+  },
+  "description": {
+    "tr": "Üyelik; fesih, dondurma ve otomatik yenileme koşullarıyla birlikte sunulur; cayma süresi sözleşme gününden başlar. Ayrıntılar Üyelik Koşulları sayfasındadır.",
+    "en": "Membership is offered with its termination, freezing and auto-renewal terms; the withdrawal period starts on the day of the contract. Details are on the Membership Terms page.",
+    "ar": "تُقدَّم العضوية مع شروط الإنهاء والتجميد والتجديد التلقائي، وتبدأ مدة العدول من يوم العقد. التفاصيل في صفحة شروط العضوية."
+  },
+  "keyword": {
+    "tr": "üyelik, paket",
+    "en": "membership, packages",
+    "ar": "عضوية، باقات"
+  },
+  "path": "uyelik-paketleri",
+  "icon": "card_membership",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "gor96r"
+    ],
+    "footer": []
+  },
+  "index": 2,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Üyelik Paketleri",
+    "en": "Membership Packages",
+    "ar": "باقات العضوية"
+  },
+  "date": "2026-10-31T14:35:25.126Z",
+  "update": "2026-11-05T22:24:58.540Z"
+}

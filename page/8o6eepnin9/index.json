@@ -1,0 +1,39 @@
+{
+  "id": "8o6eepnin9",
+  "name": {
+    "tr": "Deneme Dersi",
+    "en": "Trial Class",
+    "ar": "حصة تجريبية"
+  },
+  "description": {
+    "tr": "Dersi ve eğitmeni seçin; talebiniz bu demo sitede yalnızca tarayıcınızda oluşturulur. Sağlık durumunuz hakkında bilgi paylaşmanız gerekmez.",
+    "en": "Choose a class and an instructor; on this demo site your request is created only in your browser. You do not need to share health information.",
+    "ar": "اختر الحصة والمدرب؛ يُنشأ طلبك في متصفحك فقط. لا حاجة لمشاركة معلومات صحية."
+  },
+  "keyword": {
+    "tr": "spor salonu, fitness, grup dersi, üyelik",
+    "en": "gym, fitness, group classes, membership",
+    "ar": "نادٍ رياضي، لياقة، حصص جماعية، عضوية"
+  },
+  "path": "deneme-dersi",
+  "icon": "event",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "6xjoxn"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Deneme Dersi",
+    "en": "Trial Class",
+    "ar": "حصة تجريبية"
+  },
+  "date": "2026-10-31T14:35:25.132Z",
+  "update": "2026-11-05T22:24:58.543Z"
+}

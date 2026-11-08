@@ -1,0 +1,39 @@
+{
+  "id": "xts60rx2ff",
+  "name": {
+    "tr": "Galeri",
+    "en": "Gallery",
+    "ar": "المعرض"
+  },
+  "description": {
+    "tr": "Antrenman alanı, ders salonu ve havuzdan görüntüler.",
+    "en": "Views of the training floor, the studio and the pool.",
+    "ar": "صور من منطقة التدريب وقاعة الحصص والمسبح."
+  },
+  "keyword": {
+    "tr": "galeri, fotoğraf",
+    "en": "gallery, photos",
+    "ar": "معرض، صور"
+  },
+  "path": "galeri",
+  "icon": "photo_library",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "753njv"
+    ],
+    "footer": []
+  },
+  "index": 4,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Galeri",
+    "en": "Gallery",
+    "ar": "المعرض"
+  },
+  "date": "2026-10-31T14:35:25.137Z",
+  "update": "2026-11-05T22:24:58.546Z"
+}

@@ -1,0 +1,2935 @@
+{
+  "data": [
+    {
+      "index": 0,
+      "name": "Menu",
+      "path": "menu-2",
+      "local": "header",
+      "category": "menu",
+      "id": "t5mn01",
+      "desing": {
+        "bgcolor": "#000000",
+        "color": "#F5F5F5",
+        "activebgcolor": "#C4A035",
+        "activecolor": "#000000",
+        "height": "100px",
+        "ariaToggle": {
+          "tr": "Menüyü aç/kapat",
+          "en": "Toggle menu",
+          "ar": "تبديل القائمة"
+        },
+        "ariaClose": {
+          "tr": "Menüyü kapat",
+          "en": "Close menu"
+        },
+        "logobg": "transparent",
+        "logoborder": "none",
+        "logoradius": "0",
+        "logopad": "0",
+        "logopadmobil": "0",
+        "logomaxh": "100px",
+        "logoimg": "",
+        "langcolor": "currentColor",
+        "langbg": "transparent",
+        "tekSatir": ""
+      },
+      "version": "1.0.0",
+      "icon": "menu"
+    },
+    {
+      "name": "Slider",
+      "path": "slider",
+      "local": "header",
+      "category": "slider",
+      "id": "t5sl01",
+      "data": [
+        {
+          "img": "1.jpg"
+        },
+        {
+          "img": "2.jpg"
+        },
+        {
+          "img": "3.jpg"
+        }
+      ],
+      "desing": {
+        "delay": 3500,
+        "margin": "0px 0 0 0"
+      },
+      "version": "1.0.0",
+      "icon": "view_carousel",
+      "index": 1
+    },
+    {
+      "name": "İletişim",
+      "path": "contact-3",
+      "local": "body",
+      "category": "contact",
+      "id": "t5ct01",
+      "desing": {
+        "color": "#C4A035",
+        "name": {
+          "tr": "Bize Ulaşın"
+        },
+        "margin": "30px 0px 30px 0px",
+        "stil": "",
+        "linkcolor": "#1B3A6B"
+      },
+      "data": [
+        {
+          "icon": "phone",
+          "text": "0530 000 00 00",
+          "url": "tel:05300000000"
+        },
+        {
+          "icon": "email",
+          "text": "info@{{domain}}"
+        },
+        {
+          "icon": "map",
+          "text": "Adres Bilgisi Henüz eklenmedi Şehitkamil / Gaziantep"
+        }
+      ],
+      "version": "1.0.0",
+      "icon": "contact_mail",
+      "index": 2
+    },
+    {
+      "name": "Maps",
+      "path": "map",
+      "local": "body",
+      "category": "map",
+      "id": "t5mp01",
+      "desing": {
+        "height": "200",
+        "opacity": "0.5",
+        "backgroundcolor": "#ffffff",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "img": "map.png",
+        "externalUrl": "",
+        "stil": "cerceveli",
+        "address": {
+          "tr": "Spor Cd. No: 21, Şahinbey, Gaziantep (kurgusal adres)",
+          "en": "21 Spor Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الرياضة رقم 21، شاهين بي، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "email": "uye@nabizfitness.example",
+        "badgeText": {
+          "tr": "Konumumuz",
+          "en": "Our Location",
+          "ar": "موقعنا"
+        },
+        "infoTitle": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "اتصل بنا"
+        },
+        "directions": {
+          "tr": "Yol tarifi al",
+          "en": "Get directions",
+          "ar": "احصل على الاتجاهات"
+        }
+      },
+      "version": "1.0.0",
+      "icon": "map",
+      "index": 3
+    },
+    {
+      "index": 4,
+      "name": "Page Desing",
+      "path": "page-desing-sade",
+      "local": "body",
+      "category": "page",
+      "id": "t5pd01",
+      "desing": {
+        "height": "200",
+        "opacity": "0.5",
+        "font-size": "32",
+        "backgroundcolor": "var(--mx-site-primary, #2563eb)",
+        "menu-active": "var(--mx-site-primary, #2563eb)",
+        "category": "page",
+        "textcolor": "var(--mx-site-primary-contrast, #ffffff)",
+        "activetext": "var(--mx-site-primary-contrast, #ffffff)"
+      },
+      "version": "1.0.0",
+      "icon": "web"
+    },
+    {
+      "name": "Footer 1",
+      "path": "footer-1",
+      "local": "footer",
+      "category": "footer",
+      "id": "t5ft01",
+      "desing": {
+        "bgcolor": "#000000",
+        "color": "#F5F5F5",
+        "img": "",
+        "imgwidth": "250px",
+        "stil": "",
+        "showlang": true,
+        "showsocial": true,
+        "social": [],
+        "langcolor": ""
+      },
+      "data": [],
+      "version": "1.0.0",
+      "icon": "web_asset",
+      "index": 5
+    },
+    {
+      "id": "t5hr01",
+      "name": "Hero",
+      "path": "hero-1",
+      "local": "body",
+      "category": "hero",
+      "version": "1.1.0",
+      "icon": "hero",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, #000000 0%, #000000cc 50%, #000000 100%)",
+        "overlay": "linear-gradient(135deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.82) 100%)",
+        "title_accent": "linear-gradient(135deg, #C4A035, #C4A035)",
+        "btn_primary_bg": "#C4A035",
+        "btn_primary_color": "#111111",
+        "stat_accent": "#C4A035",
+        "shape1": "linear-gradient(135deg, rgba(196, 160, 53, 0.4), rgba(196, 160, 53, 0.12))",
+        "shape2": "linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.25))",
+        "shape3": "linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04))",
+        "title": {
+          "tr": "Kurumsal Çözümlerle Yanınızdayız",
+          "en": "Corporate Solutions"
+        },
+        "description": {
+          "tr": "Profesyonel ekibimizle markanıza özel hizmetler sunuyoruz.",
+          "en": "Tailored services for your brand."
+        },
+        "badge": {
+          "tr": "Güvenilir Partner",
+          "en": "Trusted Partner"
+        },
+        "image": "",
+        "alt": {
+          "tr": "Hero",
+          "en": "Hero"
+        },
+        "btn1": {
+          "tr": "Keşfet",
+          "en": "Explore"
+        },
+        "btn1_url": "urunler",
+        "btn2": {
+          "tr": "İletişim",
+          "en": "Contact"
+        },
+        "btn2_url": "iletisim",
+        "stats": "150+|Proje|50+|Müşteri|10+|Yıl",
+        "stil": ""
+      },
+      "index": 6
+    },
+    {
+      "id": "t5ls01",
+      "name": "Ana Sayfa Liste",
+      "path": "page-list",
+      "local": "body",
+      "category": "page-list",
+      "version": "1.0.0",
+      "icon": "grid_view",
+      "desing": {
+        "page": "page",
+        "size": 4,
+        "category": "",
+        "aspect-ratio": "1 / 1",
+        "eyebrow": {
+          "tr": "",
+          "en": ""
+        },
+        "sectionTitle": {
+          "tr": "",
+          "en": ""
+        },
+        "sectionSubtitle": {
+          "tr": "",
+          "en": ""
+        },
+        "ctaLabel": {
+          "tr": "",
+          "en": ""
+        },
+        "showAllProducts": false,
+        "margin": "20px 0px 20px 0px",
+        "bgcolor": "transparent",
+        "cardbg": "#ffffff",
+        "titlecolor": "#111827",
+        "textcolor": "#4b5563",
+        "bordercolor": "rgba(17, 24, 39, 0.1)",
+        "radius": "14px",
+        "accent": "#1e3a5f"
+      },
+      "index": 7
+    },
+    {
+      "id": "t5st01",
+      "name": "İstatistik",
+      "path": "stats-1",
+      "local": "body",
+      "category": "stats",
+      "version": "1.0.0",
+      "icon": "monitoring",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, #000000 0%, #000000dd 100%)",
+        "numbercolor": "#C4A035",
+        "labelcolor": "#e2e8f0",
+        "stil": "",
+        "iconsize": "56px",
+        "iconbox": "88px"
+      },
+      "data": [
+        {
+          "number": 150,
+          "suffix": "+",
+          "label": {
+            "tr": "Tamamlanan Proje",
+            "en": "Projects"
+          },
+          "icon": "task_alt"
+        },
+        {
+          "number": 50,
+          "suffix": "+",
+          "label": {
+            "tr": "Mutlu Müşteri",
+            "en": "Clients"
+          },
+          "icon": "sentiment_satisfied"
+        },
+        {
+          "number": 10,
+          "suffix": "+",
+          "label": {
+            "tr": "Yıllik Deneyim",
+            "en": "Years"
+          },
+          "icon": "workspace_premium"
+        },
+        {
+          "number": 24,
+          "suffix": "/7",
+          "label": {
+            "tr": "Destek",
+            "en": "Support"
+          },
+          "icon": "support_agent"
+        }
+      ],
+      "index": 8
+    },
+    {
+      "id": "t5ca01",
+      "name": "CTA",
+      "path": "cta-1",
+      "local": "body",
+      "category": "cta",
+      "version": "1.1.0",
+      "icon": "campaign",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, #000000 0%, #000000ee 100%)",
+        "btnbg": "#C4A035",
+        "btncolor": "#111111",
+        "title": {
+          "tr": "Projenizi Birlikte Hayata Geçirelim",
+          "en": "Let's Build Together"
+        },
+        "description": {
+          "tr": "Ücretsiz keşif görüşmesi icin hemen iletisime geçin.",
+          "en": "Contact us for a free discovery call."
+        },
+        "btn1Text": {
+          "tr": "İletişime Gec",
+          "en": "Contact"
+        },
+        "btn1Url": "iletisim",
+        "btn2Text": {
+          "tr": "Ürünler",
+          "en": "Products"
+        },
+        "btn2Url": "urunler",
+        "stil": ""
+      },
+      "index": 9
+    },
+    {
+      "id": "t5plpr",
+      "name": "Ürünler Liste",
+      "path": "page-list",
+      "local": "body",
+      "category": "page-list",
+      "version": "1.0.0",
+      "icon": "grid_view",
+      "desing": {
+        "page": "products",
+        "size": 4,
+        "category": "",
+        "aspect-ratio": "1 / 1",
+        "eyebrow": {
+          "tr": "",
+          "en": ""
+        },
+        "sectionTitle": {
+          "tr": "",
+          "en": ""
+        },
+        "sectionSubtitle": {
+          "tr": "",
+          "en": ""
+        },
+        "ctaLabel": {
+          "tr": "",
+          "en": ""
+        },
+        "showAllProducts": false,
+        "margin": "20px 0px 20px 0px",
+        "bgcolor": "transparent",
+        "cardbg": "#ffffff",
+        "titlecolor": "#111827",
+        "textcolor": "#4b5563",
+        "bordercolor": "rgba(17, 24, 39, 0.1)",
+        "radius": "14px",
+        "accent": "#1e3a5f"
+      },
+      "index": 10
+    },
+    {
+      "id": "t5in01",
+      "name": "Tanitim",
+      "path": "module-1",
+      "local": "body",
+      "category": "module",
+      "version": "1.1.0",
+      "icon": "business",
+      "index": 11,
+      "desing": {
+        "name": {
+          "tr": "Bizi Tanıyın",
+          "en": "About Us"
+        },
+        "description": {
+          "tr": "Yılların deneyimi ve uzman kadromuzla kurumsal çözümler sunuyoruz.",
+          "en": "Corporate solutions with experience and expertise."
+        },
+        "name2": {
+          "tr": "Vizyonumuz",
+          "en": "Vision"
+        },
+        "spot2": {
+          "tr": "Sektörümüzde yenilikçi yaklaşımlarla öncü olmak.",
+          "en": "Lead with innovation."
+        },
+        "icon2": "visibility",
+        "name3": {
+          "tr": "Misyonumuz",
+          "en": "Mission"
+        },
+        "spot3": {
+          "tr": "İhtiyaç duyulan çözümleri hızlı ve şeffaf sunmak.",
+          "en": "Deliver solutions fast and clearly."
+        },
+        "icon3": "flag",
+        "img": "index.jpg",
+        "bgcolor": "#000000",
+        "fontcolor": "#fff",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Kurumsal",
+          "en": "Corporate"
+        },
+        "stil": ""
+      }
+    },
+    {
+      "name": "Demo Kredi Şeridi",
+      "description": "Demo sitelerin alt bilgisinde duran kredi şeridi: «Bu demo Webyapar tarafından hazırlanmıştır — Bu temayı iste». Marka adı çevrilmez (Latin, dir=ltr izole), bağlantı demo adına göre webyapar.com/temalar#<slug>. Üç dil (TR/EN/AR), mantıksal CSS (RTL), mobilde sarar, reduced-motion'a saygılı.",
+      "version": "1.0.0",
+      "icon": "campaign",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "footer",
+        "kredi",
+        "rtl"
+      ],
+      "desing": {
+        "href": "https://webyapar.com/temalar#spor",
+        "brand": "Webyapar",
+        "text": {
+          "tr": "Bu demo {brand} tarafından hazırlanmıştır —",
+          "en": "This demo was prepared by {brand} —",
+          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "ariaLabel": {
+          "tr": "Demo bilgisi",
+          "en": "Demo credit",
+          "ar": "معلومات العرض التجريبي"
+        }
+      },
+      "id": "68jwh0",
+      "path": "demo-kredi",
+      "local": "footer",
+      "data": [],
+      "index": 12
+    },
+    {
+      "name": "Kurumsal Değerler 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff",
+        "badge": {
+          "tr": "Dersler",
+          "en": "Classes",
+          "ar": "الحصص"
+        },
+        "title": {
+          "tr": "Haftalık grup dersleri",
+          "en": "Weekly group classes",
+          "ar": "حصص جماعية أسبوعية"
+        },
+        "description": {
+          "tr": "Seviyenize göre uygun ders; her ders eğitmen eşliğinde yapılır.",
+          "en": "A class for your level; every class is led by an instructor.",
+          "ar": "حصة تناسب مستواك؛ وتُقام كل حصة بإشراف مدرب."
+        }
+      },
+      "data": [
+        {
+          "icon": "directions_run",
+          "name": {
+            "tr": "Kardiyo ve dayanıklılık",
+            "en": "Cardio and endurance",
+            "ar": "الكارديو والتحمل"
+          },
+          "description": {
+            "tr": "Orta tempolu interval çalışmaları ile kondisyon geliştirme.",
+            "en": "Building fitness with medium-tempo interval sessions.",
+            "ar": "تطوير اللياقة بتمارين فترية متوسطة الإيقاع."
+          }
+        },
+        {
+          "icon": "fitness_center",
+          "name": {
+            "tr": "Kuvvet antrenmanı",
+            "en": "Strength training",
+            "ar": "تمارين القوة"
+          },
+          "description": {
+            "tr": "Serbest ağırlık ve makinelerle eğitmen yönlendirmeli çalışma.",
+            "en": "Instructor-guided work with free weights and machines.",
+            "ar": "تمارين بتوجيه المدرب بالأوزان الحرة والأجهزة."
+          }
+        },
+        {
+          "icon": "self_improvement",
+          "name": {
+            "tr": "Yoga ve esneklik",
+            "en": "Yoga and mobility",
+            "ar": "اليوغا والمرونة"
+          },
+          "description": {
+            "tr": "Nefes, duruş ve esnekliğe odaklanan sakin dersler.",
+            "en": "Calm classes focused on breath, posture and mobility.",
+            "ar": "حصص هادئة تركّز على التنفس والوضعية والمرونة."
+          }
+        },
+        {
+          "icon": "sports_martial_arts",
+          "name": {
+            "tr": "Fonksiyonel antrenman",
+            "en": "Functional training",
+            "ar": "التدريب الوظيفي"
+          },
+          "description": {
+            "tr": "Günlük hareketleri destekleyen çembe ve denge çalışmaları.",
+            "en": "Circuit and balance work that supports everyday movement.",
+            "ar": "تمارين دائرية وتوازن تدعم الحركات اليومية."
+          }
+        },
+        {
+          "icon": "pool",
+          "name": {
+            "tr": "Yüzme",
+            "en": "Swimming",
+            "ar": "السباحة"
+          },
+          "description": {
+            "tr": "Başlangıç ve orta seviye için havuz dersleri.",
+            "en": "Pool classes for beginner and intermediate levels.",
+            "ar": "حصص مسبح للمبتدئين والمتوسطين."
+          }
+        },
+        {
+          "icon": "child_friendly",
+          "name": {
+            "tr": "Çocuk jimnastiği",
+            "en": "Kids’ gymnastics",
+            "ar": "جمباز الأطفال"
+          },
+          "description": {
+            "tr": "Yaş gruplarına göre oyun temelli hareket dersleri; veli izniyle.",
+            "en": "Play-based movement classes by age group; with parental consent.",
+            "ar": "حصص حركة قائمة على اللعب بحسب الفئة العمرية؛ بموافقة ولي الأمر."
+          }
+        }
+      ],
+      "category": "values",
+      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "version": "1.0.0",
+      "icon": "diamond",
+      "id": "okujkm",
+      "path": "values-1",
+      "local": "body",
+      "index": 13
+    },
+    {
+      "name": "Zaman Çizelgesi 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "badge": {
+          "tr": "Başlangıç",
+          "en": "Getting started",
+          "ar": "البداية"
+        },
+        "title": {
+          "tr": "İlk dersten üyeliğe",
+          "en": "From first class to membership",
+          "ar": "من الحصة الأولى إلى العضوية"
+        },
+        "description": {
+          "tr": "Dört adımda salona başlayın.",
+          "en": "Start at the gym in four steps.",
+          "ar": "ابدأ في النادي بأربع خطوات."
+        },
+        "accentText": "#ffffff",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "year": "01",
+          "title": {
+            "tr": "Deneme dersi",
+            "en": "Trial class",
+            "ar": "حصة تجريبية"
+          },
+          "text": {
+            "tr": "Ücretsiz deneme dersi için randevu alın.",
+            "en": "Book a free trial class.",
+            "ar": "احجز حصة تجريبية مجانية."
+          }
+        },
+        {
+          "year": "02",
+          "title": {
+            "tr": "Tanışma ve hedef",
+            "en": "Intro and goals",
+            "ar": "التعارف والأهداف"
+          },
+          "text": {
+            "tr": "Eğitmen sizinle hedeflerinizi ve sağlık durumunuzu konuşur.",
+            "en": "An instructor talks through your goals and health status.",
+            "ar": "يناقش المدرب معك أهدافك وحالتك الصحية."
+          }
+        },
+        {
+          "year": "03",
+          "title": {
+            "tr": "Paket seçimi",
+            "en": "Choose a package",
+            "ar": "اختيار الباقة"
+          },
+          "text": {
+            "tr": "Koşulları okuyup size uygun paketi seçersiniz.",
+            "en": "Read the terms and choose the package that suits you.",
+            "ar": "تقرأ الشروط وتختار الباقة المناسبة."
+          }
+        },
+        {
+          "year": "04",
+          "title": {
+            "tr": "Antrenmana başlayın",
+            "en": "Start training",
+            "ar": "ابدأ التدريب"
+          },
+          "text": {
+            "tr": "Kartınız tanımlanır, programınız hazırlanır.",
+            "en": "Your card is set up and your programme is prepared.",
+            "ar": "تُفعَّل بطاقتك ويُعدّ برنامجك."
+          }
+        }
+      ],
+      "category": "timeline",
+      "description": "Zaman çizelgesi modülü. Kurumsal tarihçe, süreç adımları veya yol haritasını dikey çizgi + yıl rozetiyle listeler. Çok dilli başlık/metin ve animasyonlu giriş içerir.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "id": "nloibf",
+      "path": "timeline-1",
+      "local": "body",
+      "index": 14
+    },
+    {
+      "name": "SSS Akordeon 1",
+      "desing": {
+        "max": "900px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "badge": {
+          "tr": "SSS",
+          "en": "FAQ",
+          "ar": "الأسئلة الشائعة"
+        },
+        "title": {
+          "tr": "Sıkça sorulan sorular",
+          "en": "Frequently asked questions",
+          "ar": "الأسئلة الشائعة"
+        },
+        "description": {
+          "tr": "Merak edilenler ve kısa yanıtlar.",
+          "en": "Common questions and short answers.",
+          "ar": "أسئلة متكررة وإجابات موجزة."
+        },
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [],
+      "category": "faq",
+      "description": "SSS akordeon modülü. Soru-cevap listesini tek seferde bir açık olacak şekilde akordeon düzende gösterir. Çok dilli veri, animasyonlu açılış, mobil uyum ve erişilebilirlik (aria-expanded) desteği içerir.",
+      "version": "1.0.0",
+      "icon": "quiz",
+      "id": "v19scm",
+      "path": "faq-1",
+      "local": "body",
+      "index": 15
+    },
+    {
+      "name": "Tanıtım Modülü",
+      "local": "body",
+      "desing": {
+        "stil": "yuzen-gorsel",
+        "name": {
+          "tr": "Nabız Fitness Kulübü",
+          "en": "Nabiz Fitness Club",
+          "ar": "نادي نبض للياقة"
+        },
+        "description": {
+          "tr": "Nabız Fitness Kulübü, herkesin kendi hızında ilerlediği, açık sözleşme koşullarıyla çalışan kurgusal bir demo kulüptür. Hiçbir ders belirli bir sonuç vaadiyle sunulmaz.",
+          "en": "Nabiz Fitness Club is a fictional demo club where everyone moves at their own pace and which works with clear contract terms. No class is offered with a promise of specific results.",
+          "ar": "نادي نبض للياقة نادٍ تجريبي افتراضي يتقدم فيه كل شخص بوتيرته ويعمل بشروط عقد واضحة. لا تُقدَّم أي حصة بوعد بنتائج محددة."
+        },
+        "name2": {
+          "tr": "Açık koşullar",
+          "en": "Clear terms",
+          "ar": "شروط واضحة"
+        },
+        "spot2": {
+          "tr": "Fesih, dondurma ve yenileme koşulları sözleşmeden önce okunur.",
+          "en": "Termination, freezing and renewal terms are read before you sign.",
+          "ar": "تُقرأ شروط الإنهاء والتجميد والتجديد قبل التوقيع."
+        },
+        "icon2": "fact_check",
+        "name3": {
+          "tr": "Eğitmen eşliği",
+          "en": "Instructor-led",
+          "ar": "بإشراف مدرب"
+        },
+        "spot3": {
+          "tr": "Her derste sertifikalı eğitmen bulunur.",
+          "en": "A certified instructor is present in every class.",
+          "ar": "يحضر مدرب معتمد في كل حصة."
+        },
+        "icon3": "verified",
+        "img": "spor-2-kettlebell.webp",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "fontcolor": "var(--mx-site-text, #1b1b1b)",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        }
+      },
+      "category": "module",
+      "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (beyaz çerçeveli yuvarlak görsel, bugünkü görünüm) · \"yuzen-gorsel\" (dik kart görsel bandın dışına taşar, gölgeli, hafif eğik) · \"cerceve-ofset\" (kare görsel, arkasında kaymış primary renk çerçeve) · \"ikon-liste\" (yatay görsel + vizyon/misyon ikonlu madde listesi; ikon icon2/icon3). Bant zemini/yazısı bgcolor/fontcolor çifti kalır; eklenen renkler yalnız var(--mx-site-*) token.",
+      "version": "1.2.0",
+      "icon": "business",
+      "id": "d0qnue",
+      "path": "module-1",
+      "data": [],
+      "index": 16
+    },
+    {
+      "name": "Galeri Masonry (Filtre + Lightbox)",
+      "description": "Masonry (sütun) ya da sabit oranlı ızgara galeri: kategori çipleriyle filtre (?cat= URL durumu, aria-pressed), lightbox (klavye, filtrelenmişte yalnız görünenler gezilir), lazy yükleme (width/height ile CLS yok), görselsiz öğede nötr yer tutucu. gap:0 ile kenarsız ızgara, hover başlık. Öğeler data[] içinde {img, thumb?, title{tr,en,ar}, cat, w, h, alt{tr,en,ar}}; kategoriler desing.cats[]. Üç dil + RTL.",
+      "version": "1.0.0",
+      "icon": "photo_library",
+      "category": "galeri",
+      "tags": [
+        "galeri",
+        "masonry",
+        "filtre",
+        "lightbox",
+        "portfolyo",
+        "gallery",
+        "ar"
+      ],
+      "desing": {
+        "max": "1280px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "gap": "12px",
+        "radius": "8px",
+        "columns": {
+          "d": 3,
+          "t": 3,
+          "m": 2
+        },
+        "ratio": "auto",
+        "captions": "hover",
+        "filter": true,
+        "lightbox": true,
+        "lazy": true,
+        "urlPrefix": "",
+        "title": {
+          "tr": "Salondan kareler",
+          "en": "Inside the gym",
+          "ar": "لقطات من النادي"
+        },
+        "description": {
+          "tr": "Antrenman alanı, ders salonu ve havuzdan görüntüler.",
+          "en": "Views of the training floor, the studio and the pool.",
+          "ar": "صور من منطقة التدريب وقاعة الحصص والمسبح."
+        },
+        "allLabel": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "filterLabel": {
+          "tr": "Kategoriye göre filtrele",
+          "en": "Filter by category",
+          "ar": "التصفية حسب الفئة"
+        },
+        "countText": {
+          "zero": {
+            "ar": "لا توجد صور"
+          },
+          "one": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photo",
+            "ar": "صورة واحدة"
+          },
+          "two": {
+            "ar": "صورتان"
+          },
+          "few": {
+            "ar": "{n} صور"
+          },
+          "many": {
+            "ar": "{n} صورة"
+          },
+          "other": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photos",
+            "ar": "{n} صورة"
+          }
+        },
+        "emptyText": {
+          "tr": "Henüz gösterilecek görsel yok.",
+          "en": "There are no images to show yet.",
+          "ar": "لا توجد صور لعرضها بعد."
+        },
+        "lightboxLabels": {
+          "dialog": {
+            "tr": "Görsel görüntüleyici",
+            "en": "Image viewer",
+            "ar": "عارض الصور"
+          },
+          "close": {
+            "tr": "Kapat",
+            "en": "Close",
+            "ar": "إغلاق"
+          },
+          "prev": {
+            "tr": "Önceki görsel",
+            "en": "Previous image",
+            "ar": "الصورة السابقة"
+          },
+          "next": {
+            "tr": "Sonraki görsel",
+            "en": "Next image",
+            "ar": "الصورة التالية"
+          },
+          "counter": {
+            "tr": "{i} / {n}",
+            "en": "{i} / {n}",
+            "ar": "{i} من {n}"
+          }
+        },
+        "cats": [
+          {
+            "id": "salon",
+            "name": {
+              "tr": "Salon",
+              "en": "Gym",
+              "ar": "النادي"
+            }
+          },
+          {
+            "id": "ekipman",
+            "name": {
+              "tr": "Ekipman",
+              "en": "Equipment",
+              "ar": "المعدات"
+            }
+          }
+        ]
+      },
+      "data": [
+        {
+          "img": "spor-2-hero-salon.webp",
+          "cat": "salon",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Antrenman salonu",
+            "en": "Training hall",
+            "ar": "صالة التدريب"
+          },
+          "alt": {
+            "tr": "Aynalı geniş antrenman salonu",
+            "en": "A wide training hall with mirrors",
+            "ar": "صالة تدريب واسعة بمرايا"
+          }
+        },
+        {
+          "img": "spor-2-ders-salonu.webp",
+          "cat": "salon",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Ders salonu",
+            "en": "Class studio",
+            "ar": "قاعة الحصص"
+          },
+          "alt": {
+            "tr": "Yoga matları dizili ders salonu",
+            "en": "A class studio with yoga mats laid out",
+            "ar": "قاعة حصص فيها حُصُر يوغا مصفوفة"
+          }
+        },
+        {
+          "img": "spor-2-havuz.webp",
+          "cat": "salon",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Havuz",
+            "en": "Pool",
+            "ar": "المسبح"
+          },
+          "alt": {
+            "tr": "Kulvarlı kapalı havuz",
+            "en": "An indoor pool with lanes",
+            "ar": "مسبح مغلق بحارات"
+          }
+        },
+        {
+          "img": "spor-2-agirlik.webp",
+          "cat": "ekipman",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Serbest ağırlık",
+            "en": "Free weights",
+            "ar": "الأوزان الحرة"
+          },
+          "alt": {
+            "tr": "Sıralı dambıllar",
+            "en": "A rack of dumbbells",
+            "ar": "رف دمبلز مرتبة"
+          }
+        },
+        {
+          "img": "spor-2-kosu-bandi.webp",
+          "cat": "ekipman",
+          "w": 600,
+          "h": 800,
+          "title": {
+            "tr": "Koşu bantları",
+            "en": "Treadmills",
+            "ar": "أجهزة الجري"
+          },
+          "alt": {
+            "tr": "Sıralı koşu bantları",
+            "en": "A row of treadmills",
+            "ar": "صف من أجهزة الجري"
+          }
+        },
+        {
+          "img": "spor-2-kettlebell.webp",
+          "cat": "ekipman",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Kettlebell",
+            "en": "Kettlebells",
+            "ar": "كيتلبل"
+          },
+          "alt": {
+            "tr": "Yerde sıralı kettlebell ağırlıkları",
+            "en": "Kettlebells lined up on the floor",
+            "ar": "أوزان كيتلبل مصطفة على الأرض"
+          }
+        }
+      ],
+      "id": "753njv",
+      "path": "galeri-masonry",
+      "local": "body",
+      "index": 17
+    },
+    {
+      "name": "Ekip 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "badge": {
+          "tr": "Eğitmenler",
+          "en": "Instructors",
+          "ar": "المدربون"
+        },
+        "title": {
+          "tr": "Eğitmen kadromuz",
+          "en": "Our instructors",
+          "ar": "طاقم المدربين"
+        },
+        "description": {
+          "tr": "Kurgusal örnek kadro; fotoğraf kullanılmamıştır.",
+          "en": "A fictional sample team; no photographs are used.",
+          "ar": "فريق افتراضي للعرض؛ دون استخدام صور."
+        },
+        "accentText": "#ffffff",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "name": {
+            "tr": "Burak Demir",
+            "en": "Burak Demir",
+            "ar": "بوراك دمير"
+          },
+          "role": {
+            "tr": "Kuvvet ve kondisyon eğitmeni",
+            "en": "Strength and conditioning coach",
+            "ar": "مدرب القوة واللياقة"
+          },
+          "bio": {
+            "tr": "Serbest ağırlık ve fonksiyonel antrenman derslerini yürütür.",
+            "en": "Leads free-weight and functional training classes.",
+            "ar": "يقود حصص الأوزان الحرة والتدريب الوظيفي."
+          },
+          "img": ""
+        },
+        {
+          "name": {
+            "tr": "Nehir Yalçın",
+            "en": "Nehir Yalcin",
+            "ar": "نهير يالتشين"
+          },
+          "role": {
+            "tr": "Yoga eğitmeni",
+            "en": "Yoga instructor",
+            "ar": "مدربة يوغا"
+          },
+          "bio": {
+            "tr": "Esneklik ve nefes derslerini yürütür.",
+            "en": "Leads mobility and breathing classes.",
+            "ar": "تقود حصص المرونة والتنفس."
+          },
+          "img": ""
+        },
+        {
+          "name": {
+            "tr": "Okan Şahin",
+            "en": "Okan Sahin",
+            "ar": "أوكان شاهين"
+          },
+          "role": {
+            "tr": "Yüzme eğitmeni",
+            "en": "Swimming instructor",
+            "ar": "مدرب سباحة"
+          },
+          "bio": {
+            "tr": "Başlangıç ve orta seviye havuz derslerini yürütür.",
+            "en": "Leads beginner and intermediate pool classes.",
+            "ar": "يقود حصص المسبح للمبتدئين والمتوسطين."
+          },
+          "img": ""
+        }
+      ],
+      "category": "team",
+      "description": "Ekip üyeleri modülü. Fotoğraf, isim, unvan ve kısa biyografiyi responsive kart grid'inde gösterir. Fotoğraf yoksa ikon fallback, çok dilli unvan/biyografi ve animasyonlu giriş içerir.",
+      "version": "1.0.0",
+      "icon": "groups",
+      "id": "s0tqu6",
+      "path": "team-1",
+      "local": "body",
+      "index": 18
+    },
+    {
+      "name": "Randevu / Rezervasyon Formu",
+      "description": "Statik randevu ve rezervasyon sihirbazı (30 Eki 2026): hizmet → uzman → tarih → saat → bilgi → onay; masa kipi (kişi sayısı + bölüm) ve gösterim kipi. Sunucusuz: gönderim WhatsApp hazır mesaj, mailto veya .ics dosyası. Kendi takvimi (Pazartesi/Cumartesi hafta başı, kapalı günler, mola, bekleme günü), üç dil (tr/en/ar, RTL), KVKK onayı, demo kipinde tarayıcıda 'randevularım' listesi.",
+      "version": "1.0.0",
+      "icon": "event_available",
+      "category": "randevu",
+      "tags": [
+        "randevu",
+        "rezervasyon",
+        "takvim",
+        "form",
+        "whatsapp",
+        "ics"
+      ],
+      "desing": {
+        "max": "960px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "errcolor": "color-mix(in srgb, #c81e1e 72%, var(--mx-site-text, #1b1b1b))",
+        "mode": "randevu",
+        "submit": "whatsapp",
+        "demo": true,
+        "weekStart": "auto",
+        "leadDays": 1,
+        "maxDays": 45,
+        "maxPartySize": 8,
+        "masaDuration": 90,
+        "requireEmail": false,
+        "phone": "+90 342 000 00 00",
+        "email": "uye@nabizfitness.example",
+        "location": {
+          "tr": "Spor Cd. No: 21, Şahinbey, Gaziantep (kurgusal adres)",
+          "en": "21 Spor Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الرياضة رقم 21، شاهين بي، غازي عنتاب (عنوان افتراضي)"
+        },
+        "badge": {
+          "tr": "Deneme dersi",
+          "en": "Trial class",
+          "ar": "حصة تجريبية"
+        },
+        "title": {
+          "tr": "Deneme dersi için randevu alın",
+          "en": "Book a trial class",
+          "ar": "احجز حصة تجريبية"
+        },
+        "description": {
+          "tr": "Dersi ve eğitmeni seçin; talebiniz bu demo sitede yalnızca tarayıcınızda oluşturulur. Sağlık durumunuz hakkında bilgi paylaşmanız gerekmez.",
+          "en": "Choose a class and an instructor; on this demo site your request is created only in your browser. You do not need to share health information.",
+          "ar": "اختر الحصة والمدرب؛ يُنشأ طلبك في متصفحك فقط. لا حاجة لمشاركة معلومات صحية."
+        },
+        "noscript": {
+          "tr": "Randevu formunu kullanmak için tarayıcınızda JavaScript açık olmalıdır. Bunun yerine bizi arayabilirsiniz.",
+          "en": "JavaScript must be enabled in your browser to use the booking form. You can call us instead.",
+          "ar": "يجب تفعيل JavaScript في المتصفح لاستخدام نموذج الحجز. يمكنك الاتصال بنا بدلًا من ذلك."
+        },
+        "services": [
+          {
+            "id": "s1",
+            "name": {
+              "tr": "Kuvvet antrenmanı",
+              "en": "Strength training",
+              "ar": "تمارين القوة"
+            },
+            "duration": 45
+          },
+          {
+            "id": "s2",
+            "name": {
+              "tr": "Yoga ve esneklik",
+              "en": "Yoga and mobility",
+              "ar": "اليوغا والمرونة"
+            },
+            "duration": 60
+          },
+          {
+            "id": "s3",
+            "name": {
+              "tr": "Yüzme dersi",
+              "en": "Swimming class",
+              "ar": "حصة سباحة"
+            },
+            "duration": 45
+          }
+        ],
+        "staff": [
+          {
+            "id": "p1",
+            "name": {
+              "tr": "Burak Demir",
+              "en": "Burak Demir",
+              "ar": "بوراك دمير"
+            },
+            "role": {
+              "tr": "Kuvvet eğitmeni",
+              "en": "Strength coach",
+              "ar": "مدرب قوة"
+            },
+            "services": [
+              "s1"
+            ]
+          },
+          {
+            "id": "p2",
+            "name": {
+              "tr": "Nehir Yalçın",
+              "en": "Nehir Yalcin",
+              "ar": "نهير يالتشين"
+            },
+            "role": {
+              "tr": "Yoga eğitmeni",
+              "en": "Yoga instructor",
+              "ar": "مدربة يوغا"
+            },
+            "services": [
+              "s2"
+            ]
+          },
+          {
+            "id": "p3",
+            "name": {
+              "tr": "Okan Şahin",
+              "en": "Okan Sahin",
+              "ar": "أوكان شاهين"
+            },
+            "role": {
+              "tr": "Yüzme eğitmeni",
+              "en": "Swimming instructor",
+              "ar": "مدرب سباحة"
+            },
+            "services": [
+              "s3"
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "id": "ic",
+            "name": {
+              "tr": "İç salon",
+              "en": "Indoor",
+              "ar": "الصالة الداخلية"
+            }
+          },
+          {
+            "id": "bahce",
+            "name": {
+              "tr": "Bahçe",
+              "en": "Garden",
+              "ar": "الحديقة"
+            }
+          }
+        ],
+        "hours": {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "08:00",
+          "end": "20:00",
+          "slot": 60,
+          "breaks": []
+        },
+        "closed": [
+          "2026-12-31",
+          "2027-01-01"
+        ],
+        "kvkk": {
+          "text": {
+            "tr": "Kişisel verilerimin bu talebin oluşturulması amacıyla işlenmesine ilişkin aydınlatma metnini okudum, anladım.",
+            "en": "I have read and understood the privacy notice on how my personal data is processed to create this request.",
+            "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية لإنشاء هذا الطلب وفهمته."
+          },
+          "href": "kisiselveriler"
+        },
+        "successText": {
+          "tr": "Talebiniz alındı. Deneme dersiniz salon takvimine göre onaylanacaktır.",
+          "en": "Your request has been received. Your trial class will be confirmed according to the gym calendar.",
+          "ar": "تم استلام طلبك، وستُؤكَّد حصتك التجريبية وفق تقويم النادي."
+        },
+        "ui": {
+          "stepsLabel": {
+            "tr": "Adımlar",
+            "en": "Steps",
+            "ar": "الخطوات"
+          },
+          "stepOf": {
+            "tr": "Adım {n} / {m}",
+            "en": "Step {n} of {m}",
+            "ar": "الخطوة {n} من {m}"
+          },
+          "s_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "s_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "s_party": {
+            "tr": "Kişi",
+            "en": "Guests",
+            "ar": "الضيوف"
+          },
+          "s_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "s_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "s_info": {
+            "tr": "Bilgiler",
+            "en": "Details",
+            "ar": "البيانات"
+          },
+          "s_confirm": {
+            "tr": "Onay",
+            "en": "Confirm",
+            "ar": "التأكيد"
+          },
+          "back": {
+            "tr": "Geri",
+            "en": "Back",
+            "ar": "رجوع"
+          },
+          "next": {
+            "tr": "Devam",
+            "en": "Continue",
+            "ar": "متابعة"
+          },
+          "reqNote": {
+            "tr": "* ile işaretli alanlar zorunludur.",
+            "en": "Fields marked * are required.",
+            "ar": "الحقول المميزة بعلامة * إلزامية."
+          },
+          "t_service": {
+            "tr": "Hizmet seçin",
+            "en": "Choose a service",
+            "ar": "اختر الخدمة"
+          },
+          "minUnit": {
+            "tr": "{n} dk",
+            "en": "{n} min",
+            "ar": "{n} دقيقة"
+          },
+          "t_staff": {
+            "tr": "Uzman seçin",
+            "en": "Choose a specialist",
+            "ar": "اختر المختص"
+          },
+          "anyStaff": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "anyStaffHint": {
+            "tr": "Uygun olan uzman atanır.",
+            "en": "The first available specialist is assigned.",
+            "ar": "يُسنَد الموعد إلى أول مختص متاح."
+          },
+          "t_party": {
+            "tr": "Kaç kişisiniz?",
+            "en": "How many guests?",
+            "ar": "كم عدد الضيوف؟"
+          },
+          "partyMinus": {
+            "tr": "Kişi sayısını azalt",
+            "en": "Decrease guests",
+            "ar": "تقليل عدد الضيوف"
+          },
+          "partyPlus": {
+            "tr": "Kişi sayısını artır",
+            "en": "Increase guests",
+            "ar": "زيادة عدد الضيوف"
+          },
+          "partyCount": {
+            "tr": {
+              "one": "{n} kişi",
+              "other": "{n} kişi"
+            },
+            "en": {
+              "one": "{n} guest",
+              "other": "{n} guests"
+            },
+            "ar": {
+              "zero": "{n} ضيف",
+              "one": "ضيف واحد",
+              "two": "ضيفان",
+              "few": "{n} ضيوف",
+              "many": "{n} ضيفًا",
+              "other": "{n} ضيف"
+            }
+          },
+          "groupHint": {
+            "tr": "{n} kişiden büyük gruplar için lütfen bizi arayın.",
+            "en": "For groups larger than {n}, please call us.",
+            "ar": "للمجموعات التي يزيد عددها عن {n}، يُرجى الاتصال بنا."
+          },
+          "t_section": {
+            "tr": "Bölüm tercihi",
+            "en": "Seating preference",
+            "ar": "تفضيل الجلسة"
+          },
+          "anySection": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "t_date": {
+            "tr": "Tarih seçin",
+            "en": "Choose a date",
+            "ar": "اختر التاريخ"
+          },
+          "prevMonth": {
+            "tr": "Önceki ay",
+            "en": "Previous month",
+            "ar": "الشهر السابق"
+          },
+          "nextMonth": {
+            "tr": "Sonraki ay",
+            "en": "Next month",
+            "ar": "الشهر التالي"
+          },
+          "calHint": {
+            "tr": "Gezinmek için ok tuşlarını, seçmek için Enter tuşunu kullanın. Kapalı günler seçilemez.",
+            "en": "Use the arrow keys to move and Enter to select. Unavailable days cannot be chosen.",
+            "ar": "استخدم مفاتيح الأسهم للتنقل ومفتاح Enter للاختيار. لا يمكن اختيار الأيام غير المتاحة."
+          },
+          "dayUnavailable": {
+            "tr": "uygun değil",
+            "en": "unavailable",
+            "ar": "غير متاح"
+          },
+          "selectedDate": {
+            "tr": "Seçilen tarih: {d}",
+            "en": "Selected date: {d}",
+            "ar": "التاريخ المختار: {d}"
+          },
+          "t_time": {
+            "tr": "Saat seçin",
+            "en": "Choose a time",
+            "ar": "اختر الوقت"
+          },
+          "timesFor": {
+            "tr": "{d} için uygun saatler",
+            "en": "Available times for {d}",
+            "ar": "الأوقات المتاحة ليوم {d}"
+          },
+          "p_morning": {
+            "tr": "Sabah",
+            "en": "Morning",
+            "ar": "الصباح"
+          },
+          "p_afternoon": {
+            "tr": "Öğleden sonra",
+            "en": "Afternoon",
+            "ar": "بعد الظهر"
+          },
+          "p_evening": {
+            "tr": "Akşam",
+            "en": "Evening",
+            "ar": "المساء"
+          },
+          "slotTaken": {
+            "tr": "dolu",
+            "en": "booked",
+            "ar": "محجوز"
+          },
+          "noSlots": {
+            "tr": "Bu tarihte uygun saat kalmadı. Lütfen başka bir gün seçin.",
+            "en": "No times are left on this date. Please choose another day.",
+            "ar": "لا توجد أوقات متاحة في هذا اليوم. يُرجى اختيار يوم آخر."
+          },
+          "t_info": {
+            "tr": "İletişim bilgileriniz",
+            "en": "Your contact details",
+            "ar": "بيانات التواصل"
+          },
+          "fName": {
+            "tr": "Ad soyad",
+            "en": "Full name",
+            "ar": "الاسم الكامل"
+          },
+          "fPhone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "رقم الهاتف"
+          },
+          "fEmail": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "fEmailOpt": {
+            "tr": "E-posta (isteğe bağlı)",
+            "en": "E-mail (optional)",
+            "ar": "البريد الإلكتروني (اختياري)"
+          },
+          "fNote": {
+            "tr": "Not (isteğe bağlı)",
+            "en": "Note (optional)",
+            "ar": "ملاحظة (اختياري)"
+          },
+          "eService": {
+            "tr": "Lütfen bir hizmet seçin.",
+            "en": "Please choose a service.",
+            "ar": "يُرجى اختيار خدمة."
+          },
+          "eDate": {
+            "tr": "Lütfen uygun bir tarih seçin.",
+            "en": "Please choose an available date.",
+            "ar": "يُرجى اختيار تاريخ متاح."
+          },
+          "eTime": {
+            "tr": "Lütfen bir saat seçin.",
+            "en": "Please choose a time.",
+            "ar": "يُرجى اختيار وقت."
+          },
+          "eName": {
+            "tr": "Lütfen adınızı ve soyadınızı yazın.",
+            "en": "Please enter your full name.",
+            "ar": "يُرجى كتابة اسمك الكامل."
+          },
+          "ePhone": {
+            "tr": "Geçerli bir telefon numarası yazın.",
+            "en": "Please enter a valid phone number.",
+            "ar": "يُرجى كتابة رقم هاتف صحيح."
+          },
+          "eEmail": {
+            "tr": "Geçerli bir e-posta adresi yazın.",
+            "en": "Please enter a valid e-mail address.",
+            "ar": "يُرجى كتابة بريد إلكتروني صحيح."
+          },
+          "eKvkk": {
+            "tr": "Devam etmek için aydınlatma metnini onaylamanız gerekir.",
+            "en": "You need to accept the privacy notice to continue.",
+            "ar": "يجب الموافقة على إشعار الخصوصية للمتابعة."
+          },
+          "t_confirm": {
+            "tr": "Özet ve onay",
+            "en": "Review and confirm",
+            "ar": "المراجعة والتأكيد"
+          },
+          "sum_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "sum_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "sum_party": {
+            "tr": "Kişi sayısı",
+            "en": "Guests",
+            "ar": "عدد الضيوف"
+          },
+          "sum_section": {
+            "tr": "Bölüm",
+            "en": "Seating",
+            "ar": "الجلسة"
+          },
+          "sum_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "sum_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "sum_name": {
+            "tr": "Ad soyad",
+            "en": "Name",
+            "ar": "الاسم"
+          },
+          "sum_phone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "الهاتف"
+          },
+          "sum_email": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "sum_note": {
+            "tr": "Not",
+            "en": "Note",
+            "ar": "ملاحظة"
+          },
+          "kvkkLink": {
+            "tr": "Aydınlatma metni",
+            "en": "Privacy notice",
+            "ar": "إشعار الخصوصية"
+          },
+          "submit_whatsapp": {
+            "tr": "WhatsApp ile gönder",
+            "en": "Send via WhatsApp",
+            "ar": "إرسال عبر واتساب"
+          },
+          "submit_mailto": {
+            "tr": "E-posta ile gönder",
+            "en": "Send by e-mail",
+            "ar": "إرسال بالبريد الإلكتروني"
+          },
+          "submit_ics": {
+            "tr": "Takvim dosyasını indir",
+            "en": "Download calendar file",
+            "ar": "تنزيل ملف التقويم"
+          },
+          "showcaseNote": {
+            "tr": "Bu bölüm bir gösterimdir: girdiğiniz bilgiler hiçbir yere gönderilmez. Gerçek talep için bizi arayabilirsiniz.",
+            "en": "This is a showcase: nothing you enter is sent anywhere. To make a real request, please call us.",
+            "ar": "هذا القسم للعرض فقط: لا تُرسَل أي بيانات تدخلها. لتقديم طلب فعلي يُرجى الاتصال بنا."
+          },
+          "callUs": {
+            "tr": "Bizi arayın",
+            "en": "Call us",
+            "ar": "اتصل بنا"
+          },
+          "restart": {
+            "tr": "Başa dön",
+            "en": "Start over",
+            "ar": "العودة إلى البداية"
+          },
+          "doneTitle_randevu": {
+            "tr": "Randevu talebiniz hazır",
+            "en": "Your appointment request is ready",
+            "ar": "طلب موعدك جاهز"
+          },
+          "doneTitle_masa": {
+            "tr": "Rezervasyon talebiniz hazır",
+            "en": "Your reservation request is ready",
+            "ar": "طلب حجزك جاهز"
+          },
+          "doneHint_whatsapp": {
+            "tr": "Mesaj WhatsApp'ta hazır olarak açıldı. Talebin bize ulaşması için mesajı göndermeyi unutmayın.",
+            "en": "The message opened in WhatsApp, ready to send. Remember to send it so your request reaches us.",
+            "ar": "فُتحت الرسالة جاهزة في واتساب. لا تنسَ إرسالها كي يصلنا طلبك."
+          },
+          "doneHint_mailto": {
+            "tr": "E-posta uygulamanızda hazır bir taslak açıldı. Göndermeyi unutmayın.",
+            "en": "A draft e-mail opened in your mail app. Remember to send it.",
+            "ar": "فُتحت مسودة رسالة في تطبيق البريد. لا تنسَ إرسالها."
+          },
+          "doneHint_ics": {
+            "tr": "Takvim dosyası indirildi. Kaydı takvim uygulamanıza ekleyebilirsiniz.",
+            "en": "The calendar file was downloaded. You can add the booking to your calendar app.",
+            "ar": "تم تنزيل ملف التقويم. يمكنك إضافة الحجز إلى تطبيق التقويم."
+          },
+          "reopen": {
+            "tr": "Mesajı yeniden aç",
+            "en": "Open the message again",
+            "ar": "فتح الرسالة مرة أخرى"
+          },
+          "reopen_ics": {
+            "tr": "Dosyayı yeniden indir",
+            "en": "Download again",
+            "ar": "إعادة التنزيل"
+          },
+          "addCal": {
+            "tr": "Takvime ekle",
+            "en": "Add to calendar",
+            "ar": "إضافة إلى التقويم"
+          },
+          "newBooking_randevu": {
+            "tr": "Yeni randevu",
+            "en": "New appointment",
+            "ar": "موعد جديد"
+          },
+          "newBooking_masa": {
+            "tr": "Yeni rezervasyon",
+            "en": "New reservation",
+            "ar": "حجز جديد"
+          },
+          "demoNote": {
+            "tr": "Demo: bilgileriniz yalnızca bu tarayıcıda saklanır, hiçbir sunucuya gönderilmez.",
+            "en": "Demo: your details stay in this browser only and are never sent to a server.",
+            "ar": "عرض تجريبي: تبقى بياناتك في هذا المتصفح فقط ولا تُرسَل إلى أي خادم."
+          },
+          "myTitle_randevu": {
+            "tr": "Randevularım",
+            "en": "My appointments",
+            "ar": "مواعيدي"
+          },
+          "myTitle_masa": {
+            "tr": "Rezervasyonlarım",
+            "en": "My reservations",
+            "ar": "حجوزاتي"
+          },
+          "cancel": {
+            "tr": "İptal et",
+            "en": "Cancel",
+            "ar": "إلغاء"
+          },
+          "cancelAria": {
+            "tr": "{d} saat {t} kaydını iptal et",
+            "en": "Cancel the booking on {d} at {t}",
+            "ar": "إلغاء الحجز بتاريخ {d} الساعة {t}"
+          },
+          "cancelled": {
+            "tr": "Kayıt iptal edildi.",
+            "en": "Booking cancelled.",
+            "ar": "تم إلغاء الحجز."
+          },
+          "svcFallback_randevu": {
+            "tr": "Randevu",
+            "en": "Appointment",
+            "ar": "موعد"
+          },
+          "msg_randevu_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {service} randevusu almak istiyorum.",
+            "en": "Hello, I would like to book {service} on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز موعد ({service}) بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_randevu_head_nosvc": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için randevu almak istiyorum.",
+            "en": "Hello, I would like to book an appointment on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز موعد بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_masa_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {party} masa rezervasyonu yapmak istiyorum.",
+            "en": "Hello, I would like to reserve a table for {party} on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز طاولة لـ {party} بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_staff": {
+            "tr": "Tercih edilen uzman: {staff}",
+            "en": "Preferred specialist: {staff}",
+            "ar": "المختص المفضل: {staff}"
+          },
+          "msg_section": {
+            "tr": "Bölüm: {section}",
+            "en": "Seating: {section}",
+            "ar": "الجلسة: {section}"
+          },
+          "msg_phone": {
+            "tr": "Telefon: {phone}",
+            "en": "Phone: {phone}",
+            "ar": "الهاتف: {phone}"
+          },
+          "msg_email": {
+            "tr": "E-posta: {email}",
+            "en": "E-mail: {email}",
+            "ar": "البريد الإلكتروني: {email}"
+          },
+          "msg_note": {
+            "tr": "Not: {note}",
+            "en": "Note: {note}",
+            "ar": "ملاحظة: {note}"
+          },
+          "mailSubject_randevu": {
+            "tr": "Randevu talebi – {name}",
+            "en": "Appointment request – {name}",
+            "ar": "طلب موعد – {name}"
+          },
+          "mailSubject_masa": {
+            "tr": "Rezervasyon talebi – {name}",
+            "en": "Reservation request – {name}",
+            "ar": "طلب حجز – {name}"
+          },
+          "icsSummary_randevu": {
+            "tr": "Randevu: {service}",
+            "en": "Appointment: {service}",
+            "ar": "موعد: {service}"
+          },
+          "icsSummary_masa": {
+            "tr": "Masa rezervasyonu – {party}",
+            "en": "Table reservation – {party}",
+            "ar": "حجز طاولة – {party}"
+          }
+        }
+      },
+      "id": "6xjoxn",
+      "path": "randevu-formu",
+      "local": "body",
+      "data": [],
+      "index": 19
+    },
+    {
+      "name": "Page Desing 5",
+      "desing": {
+        "stil": "yatay-kart",
+        "height": "200",
+        "opacity": "0.5",
+        "font-size": "32",
+        "backgroundcolor": "#000",
+        "menu-active": "var(--mx-site-primary, #2563eb)",
+        "activetext": "#fff",
+        "textcolor": "#fff",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "border_radius": "8px",
+        "card_shadow": "0 10px 28px rgba(0, 0, 0, 0.08)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "colortitle": "var(--mx-site-text, #1b1b1b)",
+        "coloractive": "var(--mx-site-primary, #2563eb)",
+        "ui": {
+          "tr": {
+            "home": "Anasayfa",
+            "products": "Sayfalar",
+            "dimensions": "Ölçüler",
+            "dimNote": "Standart üretim referansıdır; proje bazında özelleştirilebilir.",
+            "quote": "İletişim",
+            "whatsapp": "WhatsApp",
+            "prev": "Önceki",
+            "next": "Sonraki"
+          },
+          "en": {
+            "home": "Home",
+            "products": "Pages",
+            "dimensions": "Dimensions",
+            "dimNote": "Standard production reference; customizable per project.",
+            "quote": "Contact",
+            "whatsapp": "WhatsApp",
+            "prev": "Previous",
+            "next": "Next"
+          },
+          "ar": {
+            "home": "الرئيسية",
+            "products": "الصفحات",
+            "dimensions": "الأبعاد",
+            "dimNote": "مرجع إنتاج قياسي؛ قابل للتخصيص حسب المشروع.",
+            "quote": "اتصل بنا",
+            "whatsapp": "واتساب",
+            "prev": "السابق",
+            "next": "التالي"
+          }
+        },
+        "noTitle": {
+          "tr": "Başlık Yok",
+          "en": "No title",
+          "ar": "بدون عنوان"
+        },
+        "productNavAria": {
+          "tr": "Ürün navigasyonu",
+          "en": "Product navigation",
+          "ar": "تنقل المنتج"
+        }
+      },
+      "category": "page",
+      "description": "Sayfa basligi, yan menu ve icerik alani. Urun detayinda breadcrumb, olcu kartlari, teklif/WhatsApp CTA, onceki/sonraki urun navigasyonu. Kategori menusu ve responsive slide-in menu. Görsel varyant desing.stil (31 Eki 2026, yan menü bağlantıları): \"\" klasik (kutulu liste, bugünkü görünüm) · \"ikon-ustte-yuvarlak\" (ortalı karo, üstte daire ikon) · \"yatay-kart\" (ikon solda/RTL sağda, metin yanında, ayrı kartlar) · \"kenar-cizgili\" (kutu yok, başta ince çizgi; hover/aktifte primary çizgi ve içe kayma). Kart zemini bgcolor (31 Eki) korunur; eklenen renkler var(--mx-site-primary) türevi.",
+      "version": "1.4.0",
+      "icon": "web",
+      "id": "jmv3u8",
+      "path": "page-desing-5",
+      "local": "body",
+      "data": [],
+      "index": 20
+    },
+    {
+      "name": "Fiyatlandırma 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "badge": {
+          "tr": "Üyelik",
+          "en": "Membership",
+          "ar": "العضوية"
+        },
+        "title": {
+          "tr": "Üyelik paketleri",
+          "en": "Membership packages",
+          "ar": "باقات العضوية"
+        },
+        "description": {
+          "tr": "Üyelik; fesih, dondurma ve otomatik yenileme koşullarıyla birlikte sunulur; cayma süresi sözleşme gününden başlar. Ayrıntılar Üyelik Koşulları sayfasındadır.",
+          "en": "Membership is offered with its termination, freezing and auto-renewal terms; the withdrawal period starts on the day of the contract. Details are on the Membership Terms page.",
+          "ar": "تُقدَّم العضوية مع شروط الإنهاء والتجميد والتجديد التلقائي، وتبدأ مدة العدول من يوم العقد. التفاصيل في صفحة شروط العضوية."
+        },
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "plan": {
+            "tr": "Aylık",
+            "en": "Monthly",
+            "ar": "شهرية"
+          },
+          "price": "₺1.450",
+          "period": {
+            "tr": "/ ay",
+            "en": "/ month",
+            "ar": "/ شهريًا"
+          },
+          "note": {
+            "tr": "Esnek, taahhütsüz",
+            "en": "Flexible, no commitment",
+            "ar": "مرنة دون التزام"
+          },
+          "features": {
+            "tr": "Salon kullanımı|Grup dersleri|Soyunma odası|7 gün önceden iptal",
+            "en": "Gym access|Group classes|Changing rooms|Cancel with 7 days’ notice",
+            "ar": "استخدام النادي|حصص جماعية|غرف تبديل|إلغاء بإشعار 7 أيام"
+          },
+          "ctaText": {
+            "tr": "Deneme dersi al",
+            "en": "Book a trial class",
+            "ar": "احجز حصة تجريبية"
+          },
+          "ctaUrl": "../deneme-dersi/",
+          "featured": false
+        },
+        {
+          "plan": {
+            "tr": "3 aylık",
+            "en": "3 months",
+            "ar": "3 أشهر"
+          },
+          "price": "₺1.150",
+          "period": {
+            "tr": "/ ay",
+            "en": "/ month",
+            "ar": "/ شهريًا"
+          },
+          "note": {
+            "tr": "En çok tercih edilen",
+            "en": "Most popular",
+            "ar": "الأكثر طلبًا"
+          },
+          "features": {
+            "tr": "Salon kullanımı|Grup dersleri|Havuz erişimi|1 dondurma hakkı",
+            "en": "Gym access|Group classes|Pool access|One freeze",
+            "ar": "استخدام النادي|حصص جماعية|دخول المسبح|تجميد واحد"
+          },
+          "ctaText": {
+            "tr": "Deneme dersi al",
+            "en": "Book a trial class",
+            "ar": "احجز حصة تجريبية"
+          },
+          "ctaUrl": "../deneme-dersi/",
+          "featured": true,
+          "flag": {
+            "tr": "Önerilen",
+            "en": "Recommended",
+            "ar": "موصى بها"
+          }
+        },
+        {
+          "plan": {
+            "tr": "Yıllık",
+            "en": "Annual",
+            "ar": "سنوية"
+          },
+          "price": "₺890",
+          "period": {
+            "tr": "/ ay",
+            "en": "/ month",
+            "ar": "/ شهريًا"
+          },
+          "note": {
+            "tr": "Uzun dönem kullanıcılar için",
+            "en": "For long-term members",
+            "ar": "للأعضاء على المدى الطويل"
+          },
+          "features": {
+            "tr": "Tüm olanaklar|Havuz erişimi|Kişisel antrenman tanışma seansı|60 güne kadar dondurma",
+            "en": "All facilities|Pool access|Personal-training intro session|Freeze up to 60 days",
+            "ar": "جميع المرافق|دخول المسبح|جلسة تعارف تدريب شخصي|تجميد حتى 60 يومًا"
+          },
+          "ctaText": {
+            "tr": "Deneme dersi al",
+            "en": "Book a trial class",
+            "ar": "احجز حصة تجريبية"
+          },
+          "ctaUrl": "../deneme-dersi/",
+          "featured": false
+        }
+      ],
+      "category": "pricing",
+      "description": "Fiyatlandırma kartları modülü. Plan adı, fiyat, özellik listesi ve CTA butonlarını responsive grid düzende gösterir. Öne çıkan plan vurgusu (featured + rozet), çok dilli veri ve animasyonlu giriş içerir.",
+      "version": "1.0.0",
+      "icon": "payments",
+      "id": "gor96r",
+      "path": "pricing-1",
+      "local": "body",
+      "index": 21
+    },
+    {
+      "name": "Zaman Çizelgesi 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "badge": {
+          "tr": "Program",
+          "en": "Schedule",
+          "ar": "الجدول"
+        },
+        "title": {
+          "tr": "Haftalık ders programı (örnek)",
+          "en": "Weekly class schedule (sample)",
+          "ar": "جدول الحصص الأسبوعي (نموذج)"
+        },
+        "description": {
+          "tr": "Saatler örnektir; güncel program salonda ilan edilir.",
+          "en": "Times are samples; the current schedule is posted at the gym.",
+          "ar": "الأوقات نماذج؛ ويُعلَن الجدول الحالي في النادي."
+        },
+        "accentText": "#ffffff",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [
+        {
+          "year": {
+            "tr": "Pzt",
+            "en": "Mon",
+            "ar": "الإثنين"
+          },
+          "title": {
+            "tr": "07:30 Kardiyo · 19:00 Kuvvet",
+            "en": "07:30 Cardio · 19:00 Strength",
+            "ar": "07:30 كارديو · 19:00 قوة"
+          },
+          "text": {
+            "tr": "Orta tempolu interval ve eğitmen eşliğinde kuvvet.",
+            "en": "Medium-tempo intervals and instructor-led strength.",
+            "ar": "فترات متوسطة الإيقاع وقوة بإشراف مدرب."
+          }
+        },
+        {
+          "year": {
+            "tr": "Sal",
+            "en": "Tue",
+            "ar": "الثلاثاء"
+          },
+          "title": {
+            "tr": "18:30 Yoga · 20:00 Yüzme",
+            "en": "18:30 Yoga · 20:00 Swimming",
+            "ar": "18:30 يوغا · 20:00 سباحة"
+          },
+          "text": {
+            "tr": "Esneklik ve havuz dersleri.",
+            "en": "Mobility and pool classes.",
+            "ar": "حصص المرونة والمسبح."
+          }
+        },
+        {
+          "year": {
+            "tr": "Çar",
+            "en": "Wed",
+            "ar": "الأربعاء"
+          },
+          "title": {
+            "tr": "07:30 Fonksiyonel · 19:00 Kardiyo",
+            "en": "07:30 Functional · 19:00 Cardio",
+            "ar": "07:30 وظيفي · 19:00 كارديو"
+          },
+          "text": {
+            "tr": "Çembe çalışması ve interval.",
+            "en": "Circuit work and intervals.",
+            "ar": "تمارين دائرية وفترات."
+          }
+        },
+        {
+          "year": {
+            "tr": "Per",
+            "en": "Thu",
+            "ar": "الخميس"
+          },
+          "title": {
+            "tr": "18:30 Yoga · 19:30 Kuvvet",
+            "en": "18:30 Yoga · 19:30 Strength",
+            "ar": "18:30 يوغا · 19:30 قوة"
+          },
+          "text": {
+            "tr": "Sakin yoga ve kuvvet.",
+            "en": "Calm yoga and strength.",
+            "ar": "يوغا هادئة وقوة."
+          }
+        },
+        {
+          "year": {
+            "tr": "Cmt",
+            "en": "Sat",
+            "ar": "السبت"
+          },
+          "title": {
+            "tr": "10:00 Çocuk jimnastiği · 11:30 Fonksiyonel",
+            "en": "10:00 Kids’ gymnastics · 11:30 Functional",
+            "ar": "10:00 جمباز أطفال · 11:30 وظيفي"
+          },
+          "text": {
+            "tr": "Hafta sonu aile dersleri.",
+            "en": "Weekend family classes.",
+            "ar": "حصص عائلية في نهاية الأسبوع."
+          }
+        }
+      ],
+      "category": "timeline",
+      "description": "Zaman çizelgesi modülü. Kurumsal tarihçe, süreç adımları veya yol haritasını dikey çizgi + yıl rozetiyle listeler. Çok dilli başlık/metin ve animasyonlu giriş içerir.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "id": "y81wvh",
+      "path": "timeline-1",
+      "local": "body",
+      "index": 22
+    },
+    {
+      "name": "Demo Bandı",
+      "description": "Demo sitelerin her sayfasının üstünde duran, kapatılamaz bilgi şeridi: «Bu bir demo sitedir» uyarısı ve «Bu temayı iste» bağlantısı. Sayfanın en üstüne yapışır (position:sticky), sabit menüleri bant yüksekliği kadar aşağı iter (--mx-demo-bandi-h). Üç dil (TR/EN/AR), Arapçada RTL, mobilde iki satıra sarar.",
+      "version": "1.0.0",
+      "icon": "info",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "bant",
+        "uyarı",
+        "banner",
+        "rtl"
+      ],
+      "desing": {
+        "tone": "info",
+        "bandBg": "",
+        "bandFg": "",
+        "ctaHref": "https://webyapar.com/temalar#spor",
+        "ariaLabel": {
+          "tr": "Demo site uyarısı",
+          "en": "Demo site notice",
+          "ar": "تنبيه الموقع التجريبي"
+        },
+        "text": {
+          "tr": "Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz",
+          "en": "This is a demo site — the content is fictional and no payment is taken",
+          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        }
+      },
+      "id": "s3u1fo",
+      "path": "demo-bandi",
+      "local": "header",
+      "data": [],
+      "index": 23
+    },
+    {
+      "name": {
+        "tr": "Menü 10 — Şeffaf overlay",
+        "en": "Menu 10 — Transparent overlay",
+        "ar": "القائمة 10 — شفافة فوق الهيرو"
+      },
+      "description": {
+        "tr": "Hero'nun üstüne binen şeffaf menü (position:absolute): başlangıçta şeffaf zemin + açık yazı (menutextOverlay) ve altında ince koyu gradient scrim; kaydırınca 300 ms'de katı zemine (menubg/menutext) geçer ve sabitlenir. Sayfada hero yoksa (#content ilk çocuğu data-mx-hero / *-hero değilse) baştan katı ve akışta. Mobil: tam ekran panel. desing.stil: sade | cta-butonlu (sağda vurgulu düğme). Dil seçici {{langbar}}. Üç dil + RTL.",
+        "en": "Transparent menu overlaid on the hero (position:absolute): transparent background + light text (menutextOverlay) with a thin dark gradient scrim underneath; on scroll it switches to a solid background (menubg/menutext) in 300 ms and sticks. Without a hero on the page (#content first child lacks data-mx-hero / *-hero) it starts solid and in flow. Mobile: full-screen panel. desing.stil: sade | cta-butonlu (accent button on the end side). Language switcher {{langbar}}. Three languages + RTL.",
+        "ar": "قائمة شفافة فوق الهيرو (position:absolute): خلفية شفافة ونص فاتح (menutextOverlay) مع تدرّج داكن رفيع أسفلها؛ عند التمرير تتحوّل خلال 300 ms إلى خلفية صلبة (menubg/menutext) وتثبت. إن لم توجد وحدة هيرو في الصفحة (أول عنصر في #content بلا data-mx-hero / *-hero) تبدأ صلبة وضمن التدفق. الجوال: لوحة بملء الشاشة. desing.stil: sade | cta-butonlu (زر بارز في جهة النهاية). محدد اللغة {{langbar}}. ثلاث لغات + RTL."
+      },
+      "version": "1.0.0",
+      "icon": "layers",
+      "category": "menu",
+      "tags": [
+        "menu",
+        "overlay",
+        "seffaf",
+        "transparent",
+        "hero",
+        "sticky",
+        "ar"
+      ],
+      "desing": {
+        "stil": "cta-butonlu",
+        "logo": "{{logo}}",
+        "logo_acik": "",
+        "logo_h": "52px",
+        "max": "1200px",
+        "showlang": true,
+        "menubg": "var(--mx-site-bg, #ffffff)",
+        "menutext": "var(--mx-site-text, #1b1b1b)",
+        "menutextOverlay": "#ffffff",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
+        "cta": {
+          "tr": "Deneme dersi al",
+          "en": "Book a trial class",
+          "ar": "احجز حصة تجريبية"
+        },
+        "cta_url": "deneme-dersi"
+      },
+      "data": [],
+      "id": "5ee09e",
+      "path": "menu-10",
+      "local": "header",
+      "index": 24
+    },
+    {
+      "name": {
+        "tr": "Hero 5 — Tam ekran parallax / video",
+        "en": "Hero 5 — Full-screen parallax / video",
+        "ar": "هيرو 5 — شاشة كاملة بارالاكس / فيديو"
+      },
+      "description": {
+        "tr": "Tam ekran hero: arka plan görseli (desing.img) ya da sessiz döngü video (desing.video + zorunlu poster; reduced-motion'da yalnız poster). Üstte koyu→şeffaf gradient scrim (overlay/overlayText çifti), hafif parallax (JS, reduced-motion'da kapalı), aşağı kaydır oku. desing.stil: ortali | sol | alt-serit (metin alt şeritte yarı saydam kart). Yükseklik desing.yukseklik (vh, min 480px). Üç dil + RTL.",
+        "en": "Full-screen hero: background image (desing.img) or muted looping video (desing.video + required poster; poster only under reduced-motion). Dark→transparent gradient scrim on top (overlay/overlayText pair), light parallax (JS, off under reduced-motion), scroll-down arrow. desing.stil: ortali | sol | alt-serit (text in a translucent bottom strip card). Height desing.yukseklik (vh, min 480px). Three languages + RTL.",
+        "ar": "هيرو بملء الشاشة: صورة خلفية (desing.img) أو فيديو صامت متكرر (desing.video مع poster إلزامي؛ عند تقليل الحركة يظهر الـ poster فقط). تدرّج داكن→شفاف فوق الصورة (زوج overlay/overlayText)، بارالاكس خفيف (JS، يتوقف عند تقليل الحركة)، سهم التمرير للأسفل. desing.stil: ortali | sol | alt-serit (النص في شريط سفلي شبه شفاف). الارتفاع desing.yukseklik (vh، الحد الأدنى 480px). ثلاث لغات + RTL."
+      },
+      "version": "1.0.0",
+      "icon": "fullscreen",
+      "category": "hero",
+      "tags": [
+        "hero",
+        "fullscreen",
+        "parallax",
+        "video",
+        "tam-ekran",
+        "ar"
+      ],
+      "desing": {
+        "stil": "sol",
+        "hiza": "sol",
+        "yukseklik": 90,
+        "max": "1200px",
+        "img": "spor-2-agirlik.webp",
+        "video": "",
+        "poster": "",
+        "alt": {
+          "tr": "Koyu zeminli salonda sıralı dambıllar",
+          "en": "A rack of dumbbells in a dark-floored gym",
+          "ar": "رف دمبلز في صالة ذات أرضية داكنة"
+        },
+        "overlay": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 28%, #0b1220)",
+        "overlayText": "#ffffff",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Fitness kulübü · 06:30 – 23:00",
+          "en": "Fitness club · 06:30 – 23:00",
+          "ar": "نادي لياقة · 06:30 – 23:00"
+        },
+        "title": {
+          "tr": "Daha güçlü bir sen, bugün başlar",
+          "en": "A stronger you starts today",
+          "ar": "نسخة أقوى منك تبدأ اليوم"
+        },
+        "metin": {
+          "tr": "Nabız Fitness Kulübü; serbest ağırlık alanı, grup dersleri ve havuzuyla her seviyeye açık kurgusal bir demo kulüptür. Üyelik koşulları baştan açıkça yazılır; sonuç vaadi verilmez.",
+          "en": "Nabiz Fitness Club is a fictional demo club open to every level with a free-weight floor, group classes and a pool. Membership terms are stated clearly from the start; no results are promised.",
+          "ar": "نادي نبض للياقة نادٍ تجريبي افتراضي مفتوح لكل المستويات بمنطقة أوزان حرة وحصص جماعية ومسبح. تُذكر شروط العضوية بوضوح منذ البداية ولا تُقدَّم وعود بنتائج."
+        },
+        "cta1": {
+          "tr": "Deneme dersi al",
+          "en": "Book a trial class",
+          "ar": "احجز حصة تجريبية"
+        },
+        "cta1_url": "deneme-dersi",
+        "cta2": {
+          "tr": "Üyelik paketleri",
+          "en": "Membership packages",
+          "ar": "باقات العضوية"
+        },
+        "cta2_url": "uyelik-paketleri",
+        "scroll_label": {
+          "tr": "Aşağı kaydır",
+          "en": "Scroll down",
+          "ar": "مرّر للأسفل"
+        }
+      },
+      "data": [],
+      "id": "mlk9yy",
+      "path": "hero-5",
+      "local": "body",
+      "index": 25
+    },
+    {
+      "name": "Zigzag Özellik",
+      "description": "Görsel-metin sırası satır satır değişen (sol/sağ) özellik anlatımı: numara rozeti, h3, paragraf, mini CTA; görsel kenarında dekoratif çerçeve/gölge. Kaydırmada satırlar sırayla belirir (IntersectionObserver; reduced-motion ya da JS yoksa hep görünür). desing.stil: cerceve | yuzen | sade. RTL'de sıra kendiliğinden aynalanır. Veri: data[] = [{baslik{tr,en,ar}, metin{}, img, alt{}, url, ctaLabel{}?}]. Renkler yalnız token; koyu mod otomatik.",
+      "version": "1.0.0",
+      "icon": "view_agenda",
+      "category": "ozellik",
+      "tags": [
+        "özellik",
+        "zigzag",
+        "features",
+        "görsel-metin",
+        "ar"
+      ],
+      "desing": {
+        "stil": "yuzen",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "20px",
+        "numara": true,
+        "eyebrow": {
+          "tr": "Neden Nabız?",
+          "en": "Why Nabiz?",
+          "ar": "لماذا نبض؟"
+        },
+        "title": {
+          "tr": "Üç alan, tek üyelik",
+          "en": "Three areas, one membership",
+          "ar": "ثلاث مناطق وعضوية واحدة"
+        },
+        "description": {
+          "tr": "Üyelik; fesih, dondurma ve otomatik yenileme koşullarıyla birlikte sunulur.",
+          "en": "Membership comes with its termination, freezing and auto-renewal terms.",
+          "ar": "تُقدَّم العضوية مع شروط الإنهاء والتجميد والتجديد التلقائي."
+        },
+        "ctaLabel": {
+          "tr": "Daha fazla",
+          "en": "Learn more",
+          "ar": "المزيد"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Serbest ağırlık alanı",
+            "en": "Free-weight floor",
+            "ar": "منطقة الأوزان الحرة"
+          },
+          "metin": {
+            "tr": "Dambıl, halter ve raflarla geniş bir alan; her saatte eğitmen eşliği.",
+            "en": "A wide floor with dumbbells, barbells and racks; instructor presence at all hours.",
+            "ar": "مساحة واسعة بالدمبلز والبار والرفوف؛ وحضور مدرب في كل الأوقات."
+          },
+          "img": "spor-2-agirlik.webp",
+          "alt": {
+            "tr": "Sıralı dambıllar",
+            "en": "A rack of dumbbells",
+            "ar": "رف دمبلز"
+          },
+          "url": "dersler"
+        },
+        {
+          "baslik": {
+            "tr": "Grup dersleri",
+            "en": "Group classes",
+            "ar": "الحصص الجماعية"
+          },
+          "metin": {
+            "tr": "Yoga, fonksiyonel ve kardiyo dersleri; haftalık program salonda ilan edilir.",
+            "en": "Yoga, functional and cardio classes; the weekly schedule is posted at the gym.",
+            "ar": "حصص يوغا ووظيفية وكارديو؛ ويُعلَن الجدول الأسبوعي في النادي."
+          },
+          "img": "spor-2-ders-salonu.webp",
+          "alt": {
+            "tr": "Yoga matları dizili ders salonu",
+            "en": "A class studio with yoga mats",
+            "ar": "قاعة حصص فيها حُصُر يوغا"
+          },
+          "url": "ders-programi"
+        },
+        {
+          "baslik": {
+            "tr": "Kapalı havuz",
+            "en": "Indoor pool",
+            "ar": "مسبح مغلق"
+          },
+          "metin": {
+            "tr": "Kulvarlı havuzda başlangıç ve orta seviye yüzme dersleri.",
+            "en": "Beginner and intermediate swimming classes in a lane pool.",
+            "ar": "حصص سباحة للمبتدئين والمتوسطين في مسبح بحارات."
+          },
+          "img": "spor-2-havuz.webp",
+          "alt": {
+            "tr": "Kulvarlı kapalı havuz",
+            "en": "An indoor pool with lanes",
+            "ar": "مسبح مغلق بحارات"
+          },
+          "url": "dersler"
+        }
+      ],
+      "id": "h733p2",
+      "path": "ozellik-zigzag",
+      "local": "body",
+      "index": 26
+    },
+    {
+      "name": "Sayaç Şeridi (Stats 2)",
+      "description": "Tam genişlik renkli şerit (bgcolor/textcolor ÇİFT token), 3–5 sayaç: sayılar görünürken yukarı sayar (IntersectionObserver; reduced-motion ya da JS yoksa son değer doğrudan), önek/sonek (+, %, ₺), kısa açıklama, isteğe bağlı CSS desen (noktalar | cizgiler | yok). Sayı biçimi dile göre (Arapçada Latin hane). desing.stil: serit | kartli | ayrik-cizgili. Veri: data[] = [{deger, onek, sonek, ondalik?, etiket{tr,en,ar}, aciklama{}, ikon?}]. Koyu mod paletten; RTL mantıksal CSS.",
+      "version": "1.0.0",
+      "icon": "insights",
+      "category": "stats",
+      "tags": [
+        "istatistik",
+        "sayaç",
+        "stats",
+        "counter",
+        "şerit",
+        "ar"
+      ],
+      "desing": {
+        "stil": "kartli",
+        "desen": "cizgiler",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-primary, #2563eb)",
+        "textcolor": "var(--mx-site-primary-contrast, #ffffff)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 90%, var(--mx-site-primary, #2563eb))",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 26%, transparent)",
+        "radius": "16px",
+        "sure": 1000,
+        "title": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "description": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        }
+      },
+      "data": [
+        {
+          "deger": 18,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Haftalık ders çeşidi",
+            "en": "Weekly class types",
+            "ar": "أنواع الحصص الأسبوعية"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "event_repeat"
+        },
+        {
+          "deger": 6,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Eğitmen",
+            "en": "Instructors",
+            "ar": "مدربون"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "groups"
+        },
+        {
+          "deger": 3,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Antrenman alanı",
+            "en": "Training areas",
+            "ar": "مناطق تدريب"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "fitness_center"
+        },
+        {
+          "deger": 16,
+          "onek": "",
+          "sonek": "sa",
+          "etiket": {
+            "tr": "Günlük açık saat",
+            "en": "Open hours per day",
+            "ar": "ساعات العمل يوميًا"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "schedule"
+        }
+      ],
+      "id": "hpv59a",
+      "path": "stats-2",
+      "local": "body",
+      "index": 27
+    },
+    {
+      "name": {
+        "tr": "Referans Logo Bandı",
+        "en": "Client Logo Strip",
+        "ar": "شريط شعارات العملاء"
+      },
+      "description": {
+        "tr": "Referans/partner logoları: gri tonlu, sonsuz yatay kayan bant (CSS keyframes, iki kopya; hover'da durur ve renklenir; reduced-motion'da statik ızgara). İsteğe bağlı başlık satırı. Görseli olmayan satırda metin rozeti. Üç varyant (desing.stil): kayan · izgara · cerceveli-kartlar. data[] = {name, img, url}. Üç dil, RTL, koyu mod token'larla.",
+        "en": "Client/partner logos: greyscale, infinite horizontal marquee (CSS keyframes, two copies; pauses and colors on hover; static grid under reduced-motion). Optional heading row. Rows without an image get a text badge. Three variants (desing.stil): kayan · izgara · cerceveli-kartlar. data[] = {name, img, url}. Three languages, RTL, dark mode via tokens.",
+        "ar": "شعارات العملاء/الشركاء: رمادية، شريط أفقي لا نهائي (CSS، نسختان؛ يتوقف ويتلوّن عند التمرير؛ شبكة ثابتة عند تقليل الحركة). صف عنوان اختياري. ثلاثة أنماط، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "handshake",
+      "category": "referans",
+      "tags": [
+        "referans",
+        "logo",
+        "partner",
+        "marquee",
+        "clients",
+        "ar"
+      ],
+      "desing": {
+        "max": "1200px",
+        "stil": "izgara",
+        "speed": 32,
+        "logoH": "48px",
+        "grayscale": true,
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 70%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "radius": "14px",
+        "showTitle": true,
+        "title": {
+          "tr": "Birlikte çalıştığımız kurumlar (kurgusal)",
+          "en": "Organisations we work with (fictional)",
+          "ar": "جهات نعمل معها (افتراضية)"
+        },
+        "description": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "listLabel": {
+          "tr": "Referans logoları",
+          "en": "Client logos",
+          "ar": "شعارات العملاء"
+        }
+      },
+      "data": [
+        {
+          "name": "Kent Spor",
+          "img": "",
+          "url": ""
+        },
+        {
+          "name": "Mavi Swim",
+          "img": "",
+          "url": ""
+        },
+        {
+          "name": "Form Nutrition",
+          "img": "",
+          "url": ""
+        },
+        {
+          "name": "Tempo Dance",
+          "img": "",
+          "url": ""
+        },
+        {
+          "name": "Zirve Climb",
+          "img": "",
+          "url": ""
+        },
+        {
+          "name": "Nefes Yoga",
+          "img": "",
+          "url": ""
+        }
+      ],
+      "id": "ep4hse",
+      "path": "logo-bandi",
+      "local": "body",
+      "index": 28
+    },
+    {
+      "name": "CTA Şerit 1",
+      "desing": {
+        "stil": "gradient",
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "btnbg": "#ffffff",
+        "btncolor": "#10203A",
+        "title": {
+          "tr": "İlk dersinizi deneyin",
+          "en": "Try your first class",
+          "ar": "جرّب حصتك الأولى"
+        },
+        "description": {
+          "tr": "Üyelik; fesih, dondurma ve otomatik yenileme koşullarıyla birlikte sunulur; cayma süresi sözleşme gününden başlar. Ayrıntılar Üyelik Koşulları sayfasındadır.",
+          "en": "Membership is offered with its termination, freezing and auto-renewal terms; the withdrawal period starts on the day of the contract. Details are on the Membership Terms page.",
+          "ar": "تُقدَّم العضوية مع شروط الإنهاء والتجميد والتجديد التلقائي، وتبدأ مدة العدول من يوم العقد. التفاصيل في صفحة شروط العضوية."
+        },
+        "btn1Text": {
+          "tr": "Deneme dersi al",
+          "en": "Book a trial class",
+          "ar": "احجز حصة تجريبية"
+        },
+        "btn1Url": "deneme-dersi",
+        "btn2Text": {
+          "tr": "Üyelik koşulları",
+          "en": "Membership terms",
+          "ar": "شروط العضوية"
+        },
+        "btn2Url": "uyelik-kosullari"
+      },
+      "category": "cta",
+      "description": "Harekete geçirici çağrı (CTA) şerit modülü. Gradient arka plan üzerinde başlık, açıklama ve iki buton gösterir. Buton URL'leri dil öneki olmadan pathnext (iletisim, urunler) — site routing ekler. Çok dilli metin ve animasyonlu giriş içerir. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (gradient anahtarı tam genişlik bant, bugünkü görünüm) · \"gradient\" (token gradient primary→koyu, yuvarlak köşeli iç bant, ortalı yığın, ışık daireleri, hap düğmeler) · \"kart-yuzen\" (sayfa zemininde yüzen yüzey kartı, dekoratif primary daireler, sol vurgu çizgisi). Varyant renkleri yalnız var(--mx-site-*) token çiftleri.",
+      "version": "1.2.0",
+      "icon": "campaign",
+      "id": "rdcnxj",
+      "path": "cta-1",
+      "local": "body",
+      "data": [],
+      "index": 29
+    },
+    {
+      "name": {
+        "tr": "Hızlı İletişim Kartları",
+        "en": "Quick Contact Cards",
+        "ar": "بطاقات الاتصال السريع"
+      },
+      "description": {
+        "tr": "3–4 hızlı eylem kartı: Ara (tel:), WhatsApp (wa.me hazır mesaj), E-posta (mailto:), Yol tarifi (harita bağlantısı). Her kart ikon + başlık + değer + eylem düğmesi; hover'da yükselir. Veri boş olan kart basılmaz; phone/email boşsa setting'den. Üç varyant (desing.stil): kartli · ikon-serit · dikey-liste. Üç dil, RTL, koyu mod token'larla.",
+        "en": "3–4 quick action cards: Call (tel:), WhatsApp (wa.me prefilled), E-mail (mailto:), Directions (map link). Each card has icon + title + value + action button; lifts on hover. Cards without data are omitted; phone/email fall back to setting. Three variants (desing.stil): kartli · ikon-serit · dikey-liste. Three languages, RTL, dark mode via tokens.",
+        "ar": "3–4 بطاقات إجراء سريع: اتصال (tel:)، واتساب (رسالة جاهزة)، بريد إلكتروني (mailto:)، الاتجاهات (رابط خريطة). كل بطاقة: أيقونة + عنوان + قيمة + زر. البطاقات بلا بيانات لا تُعرض. ثلاثة أنماط، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "contact_phone",
+      "category": "contact",
+      "tags": [
+        "iletisim",
+        "contact",
+        "whatsapp",
+        "telefon",
+        "harita",
+        "ar"
+      ],
+      "desing": {
+        "max": "1200px",
+        "stil": "ikon-serit",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "radius": "18px",
+        "title": {
+          "tr": "Bize ulaşın",
+          "en": "Reach us",
+          "ar": "تواصل معنا"
+        },
+        "description": {
+          "tr": "Hafta içi 06:30 – 23:00 · Hafta sonu 08:00 – 21:00",
+          "en": "Weekdays 06:30 – 23:00 · Weekends 08:00 – 21:00",
+          "ar": "أيام الأسبوع 06:30 – 23:00 · نهاية الأسبوع 08:00 – 21:00"
+        },
+        "phone": "+90 342 000 00 00",
+        "whatsapp": "903420000000",
+        "email": "uye@nabizfitness.example",
+        "address": {
+          "tr": "Spor Cd. No: 21, Şahinbey, Gaziantep (kurgusal adres)",
+          "en": "21 Spor Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الرياضة رقم 21، شاهين بي، غازي عنتاب (عنوان افتراضي)"
+        },
+        "mapsUrl": "",
+        "waMessage": {
+          "tr": "Merhaba, bilgi almak istiyorum.",
+          "en": "Hello, I would like some information.",
+          "ar": "مرحبًا، أرغب في الحصول على معلومات."
+        },
+        "callTitle": {
+          "tr": "Bizi Arayın",
+          "en": "Call Us",
+          "ar": "اتصل بنا"
+        },
+        "callText": {
+          "tr": "Hafta içi 06:30 – 23:00 · Hafta sonu 08:00 – 21:00",
+          "en": "Weekdays 06:30 – 23:00 · Weekends 08:00 – 21:00",
+          "ar": "أيام الأسبوع 06:30 – 23:00 · نهاية الأسبوع 08:00 – 21:00"
+        },
+        "callBtn": {
+          "tr": "Ara",
+          "en": "Call",
+          "ar": "اتصال"
+        },
+        "waTitle": {
+          "tr": "WhatsApp",
+          "en": "WhatsApp",
+          "ar": "واتساب"
+        },
+        "waText": {
+          "tr": "Hızlı yanıt için yazın",
+          "en": "Message us for a quick reply",
+          "ar": "راسلنا للحصول على رد سريع"
+        },
+        "waBtn": {
+          "tr": "Mesaj gönder",
+          "en": "Send message",
+          "ar": "إرسال رسالة"
+        },
+        "mailTitle": {
+          "tr": "E-posta",
+          "en": "E-mail",
+          "ar": "البريد الإلكتروني"
+        },
+        "mailText": {
+          "tr": "Teklif ve detaylı sorular için",
+          "en": "For quotes and detailed questions",
+          "ar": "لعروض الأسعار والأسئلة التفصيلية"
+        },
+        "mailBtn": {
+          "tr": "E-posta gönder",
+          "en": "Send e-mail",
+          "ar": "إرسال بريد"
+        },
+        "mapTitle": {
+          "tr": "Yol Tarifi",
+          "en": "Directions",
+          "ar": "الاتجاهات"
+        },
+        "mapBtn": {
+          "tr": "Haritada aç",
+          "en": "Open in maps",
+          "ar": "فتح في الخرائط"
+        },
+        "groupLabel": {
+          "tr": "Hızlı iletişim kanalları",
+          "en": "Quick contact channels",
+          "ar": "قنوات الاتصال السريع"
+        }
+      },
+      "data": [],
+      "id": "0gcton",
+      "path": "iletisim-kartlari",
+      "local": "body",
+      "index": 30
+    },
+    {
+      "name": "Footer 1",
+      "desing": {
+        "stil": "ortali-sade",
+        "showlang": true,
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "img": "",
+        "imgwidth": "250px",
+        "showsocial": true,
+        "social": [],
+        "langcolor": ""
+      },
+      "category": "footer",
+      "data": [],
+      "description": "Evrensel alt bilgi (footer) bölüm modülü. Firma logosu, telif hakları metni, iletişim bilgileri ve sosyal medya ikonlarını responsive tasarımda sunar. 41 farklı projede kullanılır: tüm sektörlerden kurumsal, e-ticaret, restoran, sağlık, ajans, hizmet firmalarında. Tüm sayfa türlerinde standart footer yapısı sağlar. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (dalgalı üst kenar, ortalı yığın, bugünkü görünüm) · \"cizgili\" (üç sütun: sosyal | sayfalar | dil, ince dikey ayraçlar, telif alt şeritte) · \"ortali-sade\" (dalga yok, tek sütun ortalı, büyük daire çerçeveli sosyal ikonlar, nokta ayraçlı menü). Ayraç/çerçeve renkleri color anahtarının color-mix türevi.",
+      "version": "1.1.0",
+      "icon": "web_asset",
+      "id": "xvlqrt",
+      "path": "footer-1",
+      "local": "footer",
+      "index": 31
+    },
+    {
+      "name": "Süreç Adımları",
+      "description": "3–6 adımlık süreç anlatımı: çizgi/ok ile bağlı daire numaralar, altında başlık + metin. Aktif adım vurgusu kaydırmayla ilerler (IntersectionObserver; JS yoksa tüm adımlar düz görünür). desing.stil: yatay (çizgiyle bağlı sıra; mobilde dikey zaman çizgisi) | dikey (iki yanlı zaman çizgisi) | kartli (kart + ok ayraç). Veri: data[] = [{no?, baslik{tr,en,ar}, metin{}, ikon?}]. Renkler yalnız token; koyu mod otomatik; RTL'de ok/çizgi yönü aynalanır.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "category": "surec",
+      "tags": [
+        "süreç",
+        "adım",
+        "zaman çizgisi",
+        "process",
+        "steps",
+        "ar"
+      ],
+      "desing": {
+        "stil": "kartli",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Başlangıç",
+          "en": "Getting started",
+          "ar": "البداية"
+        },
+        "title": {
+          "tr": "İlk dersten üyeliğe",
+          "en": "From first class to membership",
+          "ar": "من الحصة الأولى إلى العضوية"
+        },
+        "description": {
+          "tr": "Dört adımda salona başlayın.",
+          "en": "Start at the gym in four steps.",
+          "ar": "ابدأ في النادي بأربع خطوات."
+        },
+        "stepLabel": {
+          "tr": "Adım {n}",
+          "en": "Step {n}",
+          "ar": "الخطوة {n}"
+        },
+        "listLabel": {
+          "tr": "Süreç adımları",
+          "en": "Process steps",
+          "ar": "خطوات العملية"
+        }
+      },
+      "data": [
+        {
+          "no": 1,
+          "baslik": {
+            "tr": "Deneme dersi",
+            "en": "Trial class",
+            "ar": "حصة تجريبية"
+          },
+          "metin": {
+            "tr": "Ücretsiz deneme dersi için randevu alın.",
+            "en": "Book a free trial class.",
+            "ar": "احجز حصة تجريبية مجانية."
+          },
+          "ikon": "forum"
+        },
+        {
+          "no": 2,
+          "baslik": {
+            "tr": "Tanışma ve hedef",
+            "en": "Intro and goals",
+            "ar": "التعارف والأهداف"
+          },
+          "metin": {
+            "tr": "Eğitmen sizinle hedeflerinizi ve sağlık durumunuzu konuşur.",
+            "en": "An instructor talks through your goals and health status.",
+            "ar": "يناقش المدرب معك أهدافك وحالتك الصحية."
+          },
+          "ikon": "draw"
+        },
+        {
+          "no": 3,
+          "baslik": {
+            "tr": "Paket seçimi",
+            "en": "Choose a package",
+            "ar": "اختيار الباقة"
+          },
+          "metin": {
+            "tr": "Koşulları okuyup size uygun paketi seçersiniz.",
+            "en": "Read the terms and choose the package that suits you.",
+            "ar": "تقرأ الشروط وتختار الباقة المناسبة."
+          },
+          "ikon": "construction"
+        },
+        {
+          "no": 4,
+          "baslik": {
+            "tr": "Antrenmana başlayın",
+            "en": "Start training",
+            "ar": "ابدأ التدريب"
+          },
+          "metin": {
+            "tr": "Kartınız tanımlanır, programınız hazırlanır.",
+            "en": "Your card is set up and your programme is prepared.",
+            "ar": "تُفعَّل بطاقتك ويُعدّ برنامجك."
+          },
+          "ikon": "verified"
+        }
+      ],
+      "id": "6vx4s6",
+      "path": "surec-adimlar",
+      "local": "body",
+      "index": 32
+    }
+  ]
+}

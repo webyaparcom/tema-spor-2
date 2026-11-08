@@ -1,0 +1,43 @@
+{
+  "id": "wnjlkm3mdz",
+  "name": {
+    "tr": "Üyelik Koşulları",
+    "en": "Membership Terms",
+    "ar": "شروط العضوية"
+  },
+  "description": {
+    "tr": "Fesih, dondurma, otomatik yenileme ve cayma bilgisi.",
+    "en": "Termination, freezing, auto-renewal and withdrawal information.",
+    "ar": "معلومات الإنهاء والتجميد والتجديد التلقائي والعدول."
+  },
+  "keyword": {
+    "tr": "üyelik koşulları",
+    "en": "membership terms",
+    "ar": "شروط العضوية"
+  },
+  "path": "uyelik-kosullari",
+  "icon": "gavel",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "jmv3u8"
+    ],
+    "footer": []
+  },
+  "index": 8,
+  "url": "",
+  "text": {
+    "tr": "<h2>Üyelik koşulları</h2><p><strong>Fesih:</strong> Üyelik, sözleşme süresi içinde yazılı bildirimle 30 gün önceden feshedilebilir; kullanılmayan tam aylar için iade yapılır.</p><p><strong>Dondurma:</strong> Hastalık, gebelik ya da seyahat hâlinde belgeyle yılda en fazla 60 gün dondurulabilir.</p><p><strong>Otomatik yenileme:</strong> Aylık paketler her ay otomatik yenilenir; yenileme tarihinden 7 gün önce bildirimle iptal edilebilir.</p><p><strong>Cayma:</strong> Uzaktan yapılan üyeliklerde cayma süresi sözleşmenin yapıldığı günden itibaren 14 gündür (6502 sayılı Kanun md. 9).</p><p><em>Demo sitedir; koşullar örnektir.</em></p>",
+    "en": "<h2>Membership terms</h2><p><strong>Termination:</strong> A membership can be terminated within the contract term by written notice 30 days in advance; unused full months are refunded.</p><p><strong>Freezing:</strong> With documentation, a membership can be frozen for up to 60 days a year in case of illness, pregnancy or travel.</p><p><strong>Auto-renewal:</strong> Monthly packages renew automatically each month; you can cancel by notice 7 days before the renewal date.</p><p><strong>Withdrawal:</strong> For memberships concluded remotely the withdrawal period is 14 days starting from the day the contract is concluded (Law No. 6502 art. 9).</p><p><em>This is a demo site; the terms are examples.</em></p>",
+    "ar": "<h2>شروط العضوية</h2><p><strong>الإنهاء:</strong> يمكن إنهاء العضوية خلال مدة العقد بإشعار كتابي قبل 30 يومًا، ويُردّ ما لم يُستخدم من الأشهر الكاملة.</p><p><strong>التجميد:</strong> يمكن تجميد العضوية حتى 60 يومًا في السنة بمستند عند المرض أو الحمل أو السفر.</p><p><strong>التجديد التلقائي:</strong> تتجدد الباقات الشهرية تلقائيًا كل شهر، ويمكن إلغاؤها بإشعار قبل تاريخ التجديد بسبعة أيام.</p><p><strong>العدول:</strong> في العضويات المبرمة عن بُعد تبدأ مدة العدول البالغة 14 يومًا من يوم إبرام العقد (المادة 9 من القانون التركي رقم 6502).</p><p><em>هذا موقع تجريبي والشروط أمثلة.</em></p>"
+  },
+  "title": {
+    "tr": "Üyelik Koşulları",
+    "en": "Membership Terms",
+    "ar": "شروط العضوية"
+  },
+  "date": "2026-10-31T14:35:25.129Z",
+  "update": "2026-11-05T22:24:58.575Z"
+}
