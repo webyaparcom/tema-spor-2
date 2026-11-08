@@ -1,0 +1,198 @@
+{
+  "data": [
+    {
+      "id": "3801wkf7ai",
+      "name": {
+        "tr": "Dersler",
+        "en": "Classes",
+        "ar": "الحصص"
+      },
+      "description": {
+        "tr": "Seviyenize göre uygun ders; her ders eğitmen eşliğinde yapılır.",
+        "en": "A class for your level; every class is led by an instructor.",
+        "ar": "حصة تناسب مستواك؛ وتُقام كل حصة بإشراف مدرب."
+      },
+      "path": "dersler",
+      "icon": "fitness_center",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "okujkm",
+          "6vx4s6",
+          "rdcnxj"
+        ],
+        "footer": []
+      },
+      "index": 0
+    },
+    {
+      "id": "6pmaiss6me",
+      "name": {
+        "tr": "Ders Programı",
+        "en": "Class Schedule",
+        "ar": "جدول الحصص"
+      },
+      "description": {
+        "tr": "Haftalık ders programı (örnek).",
+        "en": "The weekly class schedule (sample).",
+        "ar": "جدول الحصص الأسبوعي (نموذج)."
+      },
+      "path": "ders-programi",
+      "icon": "calendar_month",
+      "category": "3801wkf7ai",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "y81wvh"
+        ],
+        "footer": []
+      },
+      "index": 1
+    },
+    {
+      "id": "9wizr9mly4",
+      "name": {
+        "tr": "Üyelik Paketleri",
+        "en": "Membership Packages",
+        "ar": "باقات العضوية"
+      },
+      "description": {
+        "tr": "Üyelik; fesih, dondurma ve otomatik yenileme koşullarıyla birlikte sunulur; cayma süresi sözleşme gününden başlar. Ayrıntılar Üyelik Koşulları sayfasındadır.",
+        "en": "Membership is offered with its termination, freezing and auto-renewal terms; the withdrawal period starts on the day of the contract. Details are on the Membership Terms page.",
+        "ar": "تُقدَّم العضوية مع شروط الإنهاء والتجميد والتجديد التلقائي، وتبدأ مدة العدول من يوم العقد. التفاصيل في صفحة شروط العضوية."
+      },
+      "path": "uyelik-paketleri",
+      "icon": "card_membership",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "gor96r"
+        ],
+        "footer": []
+      },
+      "index": 2
+    },
+    {
+      "id": "8o6eepnin9",
+      "name": {
+        "tr": "Deneme Dersi",
+        "en": "Trial Class",
+        "ar": "حصة تجريبية"
+      },
+      "description": {
+        "tr": "Dersi ve eğitmeni seçin; talebiniz bu demo sitede yalnızca tarayıcınızda oluşturulur. Sağlık durumunuz hakkında bilgi paylaşmanız gerekmez.",
+        "en": "Choose a class and an instructor; on this demo site your request is created only in your browser. You do not need to share health information.",
+        "ar": "اختر الحصة والمدرب؛ يُنشأ طلبك في متصفحك فقط. لا حاجة لمشاركة معلومات صحية."
+      },
+      "path": "deneme-dersi",
+      "icon": "event",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "6xjoxn"
+        ],
+        "footer": []
+      },
+      "index": 3
+    },
+    {
+      "id": "xts60rx2ff",
+      "name": {
+        "tr": "Galeri",
+        "en": "Gallery",
+        "ar": "المعرض"
+      },
+      "description": {
+        "tr": "Antrenman alanı, ders salonu ve havuzdan görüntüler.",
+        "en": "Views of the training floor, the studio and the pool.",
+        "ar": "صور من منطقة التدريب وقاعة الحصص والمسبح."
+      },
+      "path": "galeri",
+      "icon": "photo_library",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "753njv"
+        ],
+        "footer": []
+      },
+      "index": 4
+    },
+    {
+      "id": "4emrze2rcd",
+      "name": {
+        "tr": "Hakkımızda",
+        "en": "About",
+        "ar": "من نحن"
+      },
+      "description": {
+        "tr": "Nabız Fitness Kulübü, herkesin kendi hızında ilerlediği, açık sözleşme koşullarıyla çalışan kurgusal bir demo kulüptür. Hiçbir ders belirli bir sonuç vaadiyle sunulmaz.",
+        "en": "Nabiz Fitness Club is a fictional demo club where everyone moves at their own pace and which works with clear contract terms. No class is offered with a promise of specific results.",
+        "ar": "نادي نبض للياقة نادٍ تجريبي افتراضي يتقدم فيه كل شخص بوتيرته ويعمل بشروط عقد واضحة. لا تُقدَّم أي حصة بوعد بنتائج محددة."
+      },
+      "path": "hakkimizda",
+      "icon": "info",
+      "category": "",
+      "status": "play",
+      "desing": {
+        "header": [],
+        "body": [
+          "d0qnue",
+          "hpv59a",
+          "s0tqu6"
+        ],
+        "footer": []
+      },
+      "index": 5
+    },
+    {
+      "name": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "status": "play",
+      "category": "",
+      "id": "xnzu5au0ag",
+      "url": "",
+      "path": "iletisim",
+      "index": 6,
+      "icon": "call",
+      "desing": {
+        "header": [],
+        "body": [
+          "0gcton",
+          "t5mp01"
+        ],
+        "footer": []
+      },
+      "pathnext": "",
+      "description": {
+        "tr": "Adres, telefon, e-posta ve çalışma saatleri.",
+        "en": "Address, phone, e-mail and opening hours.",
+        "ar": "العنوان والهاتف والبريد الإلكتروني وساعات العمل."
+      }
+    }
+  ],
+  "desc": [],
+  "desing": {
+    "header": [],
+    "body": [],
+    "footer": []
+  },
+  "modulestatus": {
+    "page": true,
+    "bgimg": true,
+    "detail": true,
+    "body": true
+  }
+}

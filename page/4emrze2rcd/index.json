@@ -1,0 +1,41 @@
+{
+  "id": "4emrze2rcd",
+  "name": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "description": {
+    "tr": "Nabız Fitness Kulübü, herkesin kendi hızında ilerlediği, açık sözleşme koşullarıyla çalışan kurgusal bir demo kulüptür. Hiçbir ders belirli bir sonuç vaadiyle sunulmaz.",
+    "en": "Nabiz Fitness Club is a fictional demo club where everyone moves at their own pace and which works with clear contract terms. No class is offered with a promise of specific results.",
+    "ar": "نادي نبض للياقة نادٍ تجريبي افتراضي يتقدم فيه كل شخص بوتيرته ويعمل بشروط عقد واضحة. لا تُقدَّم أي حصة بوعد بنتائج محددة."
+  },
+  "keyword": {
+    "tr": "hakkımızda",
+    "en": "about",
+    "ar": "من نحن"
+  },
+  "path": "hakkimizda",
+  "icon": "info",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "d0qnue",
+      "hpv59a",
+      "s0tqu6"
+    ],
+    "footer": []
+  },
+  "index": 5,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Hakkımızda",
+    "en": "About",
+    "ar": "من نحن"
+  },
+  "date": "2026-10-31T14:35:25.141Z",
+  "update": "2026-11-05T22:24:58.549Z"
+}

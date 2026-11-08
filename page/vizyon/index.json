@@ -1,0 +1,44 @@
+{
+  "name": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "status": "play",
+  "id": "vizyon",
+  "path": "vizyon",
+  "category": "",
+  "text": {
+    "tr": "<h2>Vizyonumuz</h2>\n<p>Üyeleriyle uzun vadeli ve güvene dayalı ilişki kuran bir spor merkezi olmak.</p>",
+    "en": "<h2>Our vision</h2>\n<p>To be a sports centre that builds long-term, trust-based relationships with its members.</p>",
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مركزًا رياضيًا يبني علاقات طويلة الأمد قائمة على الثقة مع أعضائه.</p>"
+  },
+  "desing": {
+    "header": [],
+    "body": [
+      "jmv3u8",
+      "rdcnxj"
+    ],
+    "footer": []
+  },
+  "desc": {},
+  "index": 2,
+  "icon": "home",
+  "title": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "description": {
+    "tr": "Vizyonumuz",
+    "en": "Our vision",
+    "ar": "رؤيتنا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "update": "2026-11-05T22:24:58.582Z",
+  "date": "2026-05-19"
+}

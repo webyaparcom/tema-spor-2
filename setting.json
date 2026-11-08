@@ -1,0 +1,58 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Nabız Fitness Kulübü: serbest ağırlık, grup dersleri, havuz, üyelik paketleri ve deneme dersi; üyelik koşulları açık. (Demo site)",
+    "en": "Nabiz Fitness Club: free weights, group classes, a pool, membership packages and a trial class; membership terms are clear. (Demo site)",
+    "ar": "نادي نبض للياقة: أوزان حرة وحصص جماعية ومسبح وباقات عضوية وحصة تجريبية مع شروط عضوية واضحة. (موقع تجريبي)"
+  },
+  "keyword": {
+    "tr": "spor salonu, fitness, grup dersi, üyelik",
+    "en": "gym, fitness, group classes, membership",
+    "ar": "نادٍ رياضي، لياقة، حصص جماعية، عضوية"
+  },
+  "category": "Kurumsal",
+  "name": "Nabız Fitness Kulübü",
+  "domain": "spor-2.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "icon": "icon.png",
+  "theme_color": "#B5E61D",
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "montserrat",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "phone": "+90 342 000 00 00",
+  "email": "uye@nabizfitness.example",
+  "colorScheme": "auto",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "1px",
+    "--mx-radius-md": "2px",
+    "--mx-radius-lg": "3px",
+    "--mx-radius-xl": "4px",
+    "--mx-shadow-md": "0 24px 60px rgba(0,0,0,.35)",
+    "--mx-dur": "280ms"
+  }
+}
