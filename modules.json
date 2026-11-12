@@ -31,7 +31,13 @@
         "logoimg": "",
         "langcolor": "currentColor",
         "langbg": "transparent",
-        "tekSatir": ""
+        "tekSatir": "",
+        "logoDark": "",
+        "duzen": "",
+        "ctaText": "",
+        "ctaHref": "",
+        "temaDugmesi": "",
+        "temaAnahtar": ""
       },
       "version": "1.0.0",
       "icon": "menu"
@@ -568,7 +574,7 @@
             "ar": "التدريب الوظيفي"
           },
           "description": {
-            "tr": "Günlük hareketleri destekleyen çembe ve denge çalışmaları.",
+            "tr": "Günlük hareketleri destekleyen çember ve denge çalışmaları.",
             "en": "Circuit and balance work that supports everyday movement.",
             "ar": "تمارين دائرية وتوازن تدعم الحركات اليومية."
           }
@@ -2054,15 +2060,11 @@
       },
       "data": [
         {
-          "year": {
-            "tr": "Pzt",
-            "en": "Mon",
-            "ar": "الإثنين"
-          },
+          "year": "01",
           "title": {
-            "tr": "07:30 Kardiyo · 19:00 Kuvvet",
-            "en": "07:30 Cardio · 19:00 Strength",
-            "ar": "07:30 كارديو · 19:00 قوة"
+            "tr": "Pazartesi — 07:30 Kardiyo · 19:00 Kuvvet",
+            "en": "Monday — 07:30 Cardio · 19:00 Strength",
+            "ar": "الإثنين — 07:30 كارديو · 19:00 قوة"
           },
           "text": {
             "tr": "Orta tempolu interval ve eğitmen eşliğinde kuvvet.",
@@ -2071,15 +2073,11 @@
           }
         },
         {
-          "year": {
-            "tr": "Sal",
-            "en": "Tue",
-            "ar": "الثلاثاء"
-          },
+          "year": "02",
           "title": {
-            "tr": "18:30 Yoga · 20:00 Yüzme",
-            "en": "18:30 Yoga · 20:00 Swimming",
-            "ar": "18:30 يوغا · 20:00 سباحة"
+            "tr": "Salı — 18:30 Yoga · 20:00 Yüzme",
+            "en": "Tuesday — 18:30 Yoga · 20:00 Swimming",
+            "ar": "الثلاثاء — 18:30 يوغا · 20:00 سباحة"
           },
           "text": {
             "tr": "Esneklik ve havuz dersleri.",
@@ -2088,32 +2086,24 @@
           }
         },
         {
-          "year": {
-            "tr": "Çar",
-            "en": "Wed",
-            "ar": "الأربعاء"
-          },
+          "year": "03",
           "title": {
-            "tr": "07:30 Fonksiyonel · 19:00 Kardiyo",
-            "en": "07:30 Functional · 19:00 Cardio",
-            "ar": "07:30 وظيفي · 19:00 كارديو"
+            "tr": "Çarşamba — 07:30 Fonksiyonel · 19:00 Kardiyo",
+            "en": "Wednesday — 07:30 Functional · 19:00 Cardio",
+            "ar": "الأربعاء — 07:30 وظيفي · 19:00 كارديو"
           },
           "text": {
-            "tr": "Çembe çalışması ve interval.",
+            "tr": "Devre çalışması ve interval.",
             "en": "Circuit work and intervals.",
             "ar": "تمارين دائرية وفترات."
           }
         },
         {
-          "year": {
-            "tr": "Per",
-            "en": "Thu",
-            "ar": "الخميس"
-          },
+          "year": "04",
           "title": {
-            "tr": "18:30 Yoga · 19:30 Kuvvet",
-            "en": "18:30 Yoga · 19:30 Strength",
-            "ar": "18:30 يوغا · 19:30 قوة"
+            "tr": "Perşembe — 18:30 Yoga · 19:30 Kuvvet",
+            "en": "Thursday — 18:30 Yoga · 19:30 Strength",
+            "ar": "الخميس — 18:30 يوغا · 19:30 قوة"
           },
           "text": {
             "tr": "Sakin yoga ve kuvvet.",
@@ -2122,15 +2112,11 @@
           }
         },
         {
-          "year": {
-            "tr": "Cmt",
-            "en": "Sat",
-            "ar": "السبت"
-          },
+          "year": "05",
           "title": {
-            "tr": "10:00 Çocuk jimnastiği · 11:30 Fonksiyonel",
-            "en": "10:00 Kids’ gymnastics · 11:30 Functional",
-            "ar": "10:00 جمباز أطفال · 11:30 وظيفي"
+            "tr": "Cumartesi — 10:00 Çocuk jimnastiği · 11:30 Fonksiyonel",
+            "en": "Saturday — 10:00 Kids’ gymnastics · 11:30 Functional",
+            "ar": "السبت — 10:00 جمباز أطفال · 11:30 وظيفي"
           },
           "text": {
             "tr": "Hafta sonu aile dersleri.",
@@ -2185,6 +2171,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "id": "s3u1fo",
@@ -2520,7 +2512,7 @@
         {
           "deger": 16,
           "onek": "",
-          "sonek": "sa",
+          "sonek": "",
           "etiket": {
             "tr": "Günlük açık saat",
             "en": "Open hours per day",
@@ -2722,9 +2714,9 @@
         },
         "mapsUrl": "",
         "waMessage": {
-          "tr": "Merhaba, bilgi almak istiyorum.",
-          "en": "Hello, I would like some information.",
-          "ar": "مرحبًا، أرغب في الحصول على معلومات."
+          "tr": "Merhaba, deneme dersi hakkında bilgi almak istiyorum.",
+          "en": "Hello, I would like information about a trial class.",
+          "ar": "مرحبًا، أرغب في معلومات عن حصة تجريبية."
         },
         "callTitle": {
           "tr": "Bizi Arayın",
@@ -2747,9 +2739,9 @@
           "ar": "واتساب"
         },
         "waText": {
-          "tr": "Hızlı yanıt için yazın",
-          "en": "Message us for a quick reply",
-          "ar": "راسلنا للحصول على رد سريع"
+          "tr": "Üyelik ve ders soruları için yazın",
+          "en": "Write for membership and class questions",
+          "ar": "راسلنا لأسئلة العضوية والحصص"
         },
         "waBtn": {
           "tr": "Mesaj gönder",
@@ -2762,9 +2754,9 @@
           "ar": "البريد الإلكتروني"
         },
         "mailText": {
-          "tr": "Teklif ve detaylı sorular için",
-          "en": "For quotes and detailed questions",
-          "ar": "لعروض الأسعار والأسئلة التفصيلية"
+          "tr": "Üyelik ve ders soruları için",
+          "en": "For membership and class questions",
+          "ar": "لأسئلة العضوية والحصص"
         },
         "mailBtn": {
           "tr": "E-posta gönder",
@@ -2930,6 +2922,215 @@
       "path": "surec-adimlar",
       "local": "body",
       "index": 32
+    },
+    {
+      "name": {
+        "tr": "Footer 10 — Mega footer (CTA bantlı)",
+        "en": "Footer 10 — Mega footer (CTA band)",
+        "ar": "تذييل 10 — تذييل ضخم (شريط دعوة)"
+      },
+      "description": {
+        "tr": "Mega alt bilgi: üstte bülten/CTA bandı (e-posta kutusu + düğme — gönderim mailto ya da kapalı; KVKK notu), altında 5 sütun (marka + açıklama + sosyal · sayfalar (maxpages) · hizmetler · iletişim · çalışma saatleri; boş sütun basılmaz, sütun sınıfı otomatik), en altta telif + yasal bağlantılar + dil seçici + «yukarı» düğmesi. Üç varyant (desing.stil): koyu · acik · gradient-ust. Üç dil, RTL, koyu mod token'larla.",
+        "en": "Mega footer: newsletter/CTA band on top (e-mail box + button — mailto submission or disabled; privacy note), 5 columns below (brand + about + social · pages (maxpages) · services · contact · opening hours; empty columns are omitted, column class is automatic), bottom bar with copyright + legal links + language switcher + «back to top». Three variants (desing.stil): koyu · acik · gradient-ust. Three languages, RTL, dark mode via tokens.",
+        "ar": "تذييل ضخم: شريط نشرة بريدية/دعوة في الأعلى (حقل بريد + زر؛ إرسال mailto أو معطّل؛ ملاحظة خصوصية)، 5 أعمدة (العلامة + نبذة + تواصل · الصفحات · الخدمات · الاتصال · ساعات العمل)، شريط سفلي بحقوق النشر والروابط القانونية ومبدّل اللغة وزر «إلى الأعلى». ثلاثة أنماط، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "footer",
+      "category": "footer",
+      "tags": [
+        "footer",
+        "bulten",
+        "newsletter",
+        "mega",
+        "ar"
+      ],
+      "desing": {
+        "stil": "koyu",
+        "showlang": true,
+        "maxpages": 8,
+        "koyubg": "color-mix(in srgb, #0f172a 86%, var(--mx-site-primary, #2563eb))",
+        "koyutext": "#f1f5f9",
+        "acikbg": "var(--mx-site-surface, #f6f6f4)",
+        "aciktext": "var(--mx-site-text, #1b1b1b)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "errcolor": "var(--mx-color-danger, #b42318)",
+        "radius": "16px",
+        "logo_maxh": "52px",
+        "logo_plate": false,
+        "about": {
+          "tr": "Nabız Fitness Kulübü: serbest ağırlık, grup dersleri, havuz, üyelik paketleri ve deneme dersi; üyelik koşulları açık. (Demo site)",
+          "en": "Nabiz Fitness Club: free weights, group classes, a pool, membership packages and a trial class; membership terms are clear. (Demo site)",
+          "ar": "نادي نبض للياقة: أوزان حرة وحصص جماعية ومسبح وباقات عضوية وحصة تجريبية مع شروط عضوية واضحة. (موقع تجريبي)"
+        },
+        "nlShow": true,
+        "nlGonderim": "mailto",
+        "nlEmail": "uye@nabizfitness.example",
+        "nlTitle": {
+          "tr": "Gelişmelerden haberdar olun",
+          "en": "Stay in the loop",
+          "ar": "ابقَ على اطلاع"
+        },
+        "nlText": {
+          "tr": "Ayda bir bülten; kampanya ve yeniliklerden ilk siz haberdar olun.",
+          "en": "One newsletter a month; be the first to hear about offers and news.",
+          "ar": "نشرة واحدة شهريًا؛ كن أول من يعرف بالعروض والمستجدات."
+        },
+        "nlLabel": {
+          "tr": "E-posta adresiniz",
+          "en": "Your e-mail address",
+          "ar": "بريدك الإلكتروني"
+        },
+        "nlBtn": {
+          "tr": "Abone ol",
+          "en": "Subscribe",
+          "ar": "اشترك"
+        },
+        "nlKvkk": {
+          "tr": "Abone olarak e-posta adresinizin bülten amacıyla işlenmesini kabul edersiniz. İstediğiniz an ayrılabilirsiniz.",
+          "en": "By subscribing you agree to the processing of your e-mail address for the newsletter. You can unsubscribe at any time.",
+          "ar": "بالاشتراك توافق على معالجة بريدك الإلكتروني لأغراض النشرة. يمكنك إلغاء الاشتراك في أي وقت."
+        },
+        "nlSubject": {
+          "tr": "Bülten aboneliği",
+          "en": "Newsletter subscription",
+          "ar": "الاشتراك في النشرة"
+        },
+        "nlBody": {
+          "tr": "Merhaba, bültene abone olmak istiyorum.",
+          "en": "Hello, I would like to subscribe to the newsletter.",
+          "ar": "مرحبًا، أرغب في الاشتراك في النشرة البريدية."
+        },
+        "nlErr": {
+          "tr": "Geçerli bir e-posta adresi girin.",
+          "en": "Enter a valid e-mail address.",
+          "ar": "أدخل بريدًا إلكترونيًا صالحًا."
+        },
+        "nlOk": {
+          "tr": "E-posta uygulamanız açılıyor; aboneliği oradan onaylayın.",
+          "en": "Your e-mail app is opening; confirm the subscription there.",
+          "ar": "يتم فتح تطبيق البريد؛ أكّد الاشتراك من هناك."
+        },
+        "title_pages": {
+          "tr": "Sayfalar",
+          "en": "Pages",
+          "ar": "الصفحات"
+        },
+        "title_services": {
+          "tr": "Hizmetler",
+          "en": "Services",
+          "ar": "الخدمات"
+        },
+        "title_contact": {
+          "tr": "İletişim",
+          "en": "Contact",
+          "ar": "اتصل بنا"
+        },
+        "title_hours": {
+          "tr": "Çalışma Saatleri",
+          "en": "Opening Hours",
+          "ar": "ساعات العمل"
+        },
+        "title_social": {
+          "tr": "Bizi takip edin",
+          "en": "Follow us",
+          "ar": "تابعنا"
+        },
+        "services": [
+          {
+            "name": {
+              "tr": "Kardiyo ve dayanıklılık",
+              "en": "Cardio and endurance",
+              "ar": "الكارديو والتحمل"
+            },
+            "href": "dersler"
+          },
+          {
+            "name": {
+              "tr": "Kuvvet antrenmanı",
+              "en": "Strength training",
+              "ar": "تمارين القوة"
+            },
+            "href": "dersler"
+          },
+          {
+            "name": {
+              "tr": "Yoga ve esneklik",
+              "en": "Yoga and mobility",
+              "ar": "اليوغا والمرونة"
+            },
+            "href": "dersler"
+          },
+          {
+            "name": {
+              "tr": "Fonksiyonel antrenman",
+              "en": "Functional training",
+              "ar": "التدريب الوظيفي"
+            },
+            "href": "dersler"
+          }
+        ],
+        "hours": [
+          {
+            "days": {
+              "tr": "Çalışma saatleri",
+              "en": "Working hours",
+              "ar": "ساعات العمل"
+            },
+            "time": {
+              "tr": "Hafta içi 06:30 – 23:00 · Hafta sonu 08:00 – 21:00",
+              "en": "Weekdays 06:30 – 23:00 · Weekends 08:00 – 21:00",
+              "ar": "أيام الأسبوع 06:30 – 23:00 · نهاية الأسبوع 08:00 – 21:00"
+            }
+          }
+        ],
+        "address": {
+          "tr": "Spor Cd. No: 21, Şahinbey, Gaziantep (kurgusal adres)",
+          "en": "21 Spor Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع الرياضة رقم 21، شاهين بي، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "email": "uye@nabizfitness.example",
+        "social": [],
+        "legal": [
+          {
+            "text": {
+              "tr": "Gizlilik",
+              "en": "Privacy",
+              "ar": "الخصوصية"
+            },
+            "href": "gizlilikpolitikasi"
+          },
+          {
+            "text": {
+              "tr": "Kişisel veriler",
+              "en": "Personal data",
+              "ar": "البيانات الشخصية"
+            },
+            "href": "kisiselveriler"
+          }
+        ],
+        "rightsText": {
+          "tr": "Tüm hakları saklıdır.",
+          "en": "All rights reserved.",
+          "ar": "جميع الحقوق محفوظة."
+        },
+        "topLabel": {
+          "tr": "Yukarı çık",
+          "en": "Back to top",
+          "ar": "العودة إلى الأعلى"
+        }
+      },
+      "data": [],
+      "veri": {
+        "statik": true,
+        "dinamik": false,
+        "kaynak": "desing/data"
+      },
+      "id": "vt5oew",
+      "path": "footer-10",
+      "local": "footer",
+      "index": 33
     }
   ]
 }
