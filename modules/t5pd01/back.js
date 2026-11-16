@@ -1,68 +1,79 @@
-// Metni satırlara ayırıyoruz
-var lines = page["text"][json.lang].split("\n");
-// HTML içeriğini oluşturacağımız diziyi başlatıyoruz
-var htmlContent = [];
-// Her satırı işliyoruz
-lines.forEach(function(line, index) {
-  htmlContent.push(`<p>${line}</p>`);
-});
-// Hizmetler listesini kapatıyoruz
-var ulIndex = htmlContent.lastIndexOf("</li>");
-if (ulIndex !== -1) {
-  htmlContent.splice(ulIndex + 1, 0, "</ul>");
-}
-// HTML içeriğini birleştiriyoruz
-var finalHtml = htmlContent.join("\n");
-// Sonucu konsola yazdırıyoruz (gerçek uygulamada bu HTML'i DOM'a ekleyebilirsiniz)
-if (page["text"] != undefined) {
-  html = html.replace(new RegExp("{{text}}", "g"), finalHtml);
-} else {
-  html = html.replace(new RegExp("{{text}}", "g"), "");
-}
-if (page["img"] == undefined) {
-  html = html.replace(new RegExp("{{img}}", "g"), "");
-} else {
-  html = html.replace(
-    new RegExp("{{img}}", "g"),
-    "/page/" + page["id"] + "/" + page["img"],
-  );
+/* page-desing-2 — metin + aciklamali gorsel + kategori sayfa listesi.
+   Kritik duzeltme: page.text[json.lang] dil fallback'siz erisim, dil eksikse
+   tum back.js'i patlatiyordu ve {{text}}/{{descimg}}/{{pagelist}} ciktiya
+   siziyordu (or. yalniz tr metni olan projede ar/de sayfalari). */
+
+function pd2Lang(val) {
+  if (val == null) {
+    return "";
+  }
+  if (typeof val === "object") {
+    if (val[json.lang] != null) {
+      return val[json.lang];
+    }
+    if (val.tr != null) {
+      return val.tr;
+    }
+    var pd2Keys = Object.keys(val);
+    return pd2Keys.length ? (val[pd2Keys[0]] || "") : "";
+  }
+  return String(val);
 }
 
-if (page["img"] != undefined) {
-  var descimg = `
-  <div class="modulex-desc-body">
-      <div class="modulex-img">
-          <img src="{{img}}?v={{random}}" width="100%" alt="{{title}}" />
-      </div>
-      {{desc}}
-  </div>`;
+/* Metin: satirlar <p> olarak */
+var pd2Text = pd2Lang(page["text"]);
+var finalHtml = "";
+if (pd2Text) {
+  var lines = String(pd2Text).split("\n");
+  var htmlContent = [];
+  lines.forEach(function (line) {
+    htmlContent.push("<p>" + line + "</p>");
+  });
+  var ulIndex = htmlContent.lastIndexOf("</li>");
+  if (ulIndex !== -1) {
+    htmlContent.splice(ulIndex + 1, 0, "</ul>");
+  }
+  finalHtml = htmlContent.join("\n");
+}
+html = html.replace(new RegExp("{{text}}", "g"), finalHtml);
 
+/* Aciklamali gorsel blogu */
+if (page["img"] != undefined && page["img"] != "") {
+  var descimg = '<div class="modulex-desc-body">' +
+    '<div class="modulex-img">' +
+    '<img src="/page/' + page["id"] + '/{{img}}?v={{random}}" width="100%" alt="{{name}}" loading="lazy" />' +
+    "</div>" +
+    "{{desc}}" +
+    "</div>";
   html = html.replace(new RegExp("{{descimg}}", "g"), descimg);
 
-  if (page["desc"] == undefined) {
-    html = html.replace(new RegExp("{{desc}}", "g"), "");
-  } else {
-    var desc = "";
+  var desc = "";
+  if (page["desc"] && typeof page["desc"] === "object") {
     for (var key in page["desc"]) {
-      if (page["desc"][key] != "") {
-        desc += `<div>${page["desc"][key]}</div>`;
+      var descVal = pd2Lang(page["desc"][key]);
+      if (descVal !== "") {
+        desc += "<div>" + descVal + "</div>";
       }
     }
-    if (desc != "") {
-      desc = `<div class="modulex-desc-menu">${desc}</div>`;
-    }
-    html = html.replace(new RegExp("{{desc}}", "g"), desc);
   }
+  if (desc !== "") {
+    desc = '<div class="modulex-desc-menu">' + desc + "</div>";
+  }
+  html = html.replace(new RegExp("{{desc}}", "g"), desc);
 } else {
   html = html.replace(new RegExp("{{descimg}}", "g"), "");
+  html = html.replace(new RegExp("{{desc}}", "g"), "");
 }
 
+/* Kategori sayfa listesi */
 var pagelist = "";
-for (var iterator of webmakerdata[json.desing.category].data) {
-  menuactive = "";
-  if (iterator.path == page.path) {
-    menuactive = `class="active"`;
+if (json.desing && json.desing.category && webmakerdata[json.desing.category] && Array.isArray(webmakerdata[json.desing.category].data)) {
+  for (var iterator of webmakerdata[json.desing.category].data) {
+    var menuactive = "";
+    if (iterator.path == page.path) {
+      menuactive = 'class="active"';
+    }
+    pagelist += "<a " + menuactive + ' href="' + wxLangInternalHref(iterator.pathnext || iterator.path) + '" >' + pd2Lang(iterator.name) + "</a>";
   }
-  pagelist += `<a ${menuactive}  href="${wxLangInternalHref(iterator.path)}" >${((iterator.name && (iterator.name[json.lang] != null ? iterator.name[json.lang] : iterator.name.tr)) || "")}</a>`;
 }
 html = html.replace(new RegExp("{{pagelist}}", "g"), pagelist);

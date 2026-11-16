@@ -5,13 +5,15 @@
     "opacity": "0.5",
     "font-size": "50",
     "backgroundcolor": "#000",
-    "menu-active": "#1e3046",
-    "category": "page",
+    "menu-active": "#000",
+    "category": "kurumsal",
     "textcolor": "#ffffff",
     "activetext": "#ffffff"
   },
   "category": "page",
-  "description": "Sayfa başlığı ve hero section tasarımı. Kategorilere göre dinamik arka plan ve başlık gösterimi yapar. 1 projede aktif.",
+  "description": "Sayfa hero banner ve kategori başlık modülü. Kurumsal sayfalara özel tasarım, arka plan görseli ve başlık overlay sunar. 9 farklı projede kullanılır: üretim, eğitim, inşaat, muhasebe, ajans ve hizmet sektörlerinde. Aktif menü renklendirme entegrasyonu, kategori bazlı görsel sistemi ve responsive font boyutu ayarı içerir.",
+  "version": "1.0.0",
+  "icon": "web",
   "veri": {
     "statik": true,
     "dinamik": false,

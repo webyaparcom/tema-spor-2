@@ -1,74 +1,61 @@
 {
-  "name": {
-    "tr": "Hero 5 — Tam ekran parallax / video",
-    "en": "Hero 5 — Full-screen parallax / video",
-    "ar": "هيرو 5 — شاشة كاملة بارالاكس / فيديو"
-  },
-  "description": {
-    "tr": "Tam ekran hero: arka plan görseli (desing.img) ya da sessiz döngü video (desing.video + zorunlu poster; reduced-motion'da yalnız poster). Üstte koyu→şeffaf gradient scrim (overlay/overlayText çifti), hafif parallax (JS, reduced-motion'da kapalı), aşağı kaydır oku. desing.stil: ortali | sol | alt-serit (metin alt şeritte yarı saydam kart). Yükseklik desing.yukseklik (vh, min 480px). Üç dil + RTL.",
-    "en": "Full-screen hero: background image (desing.img) or muted looping video (desing.video + required poster; poster only under reduced-motion). Dark→transparent gradient scrim on top (overlay/overlayText pair), light parallax (JS, off under reduced-motion), scroll-down arrow. desing.stil: ortali | sol | alt-serit (text in a translucent bottom strip card). Height desing.yukseklik (vh, min 480px). Three languages + RTL.",
-    "ar": "هيرو بملء الشاشة: صورة خلفية (desing.img) أو فيديو صامت متكرر (desing.video مع poster إلزامي؛ عند تقليل الحركة يظهر الـ poster فقط). تدرّج داكن→شفاف فوق الصورة (زوج overlay/overlayText)، بارالاكس خفيف (JS، يتوقف عند تقليل الحركة)، سهم التمرير للأسفل. desing.stil: ortali | sol | alt-serit (النص في شريط سفلي شبه شفاف). الارتفاع desing.yukseklik (vh، الحد الأدنى 480px). ثلاث لغات + RTL."
-  },
+  "name": "Açılış Yarım Panel — kenardan kenara görsel yarısı + marka renkli panel",
+  "description": "Bölüm iki eşit yarı ve kenardan kenara: bir yarı kesintisiz görsel, öbür yarı marka renginde panelde etiket, h1, metin, düğmeler ve ayraçlı maddeler. Kap (container) yok: görsel ekran kenarına dayanır, metin paneli marka renginin kendisidir; poster/afiş etkisi. Başlık h1, ilk görsel eager. Metinler dil sözlüğü, renkler desing + var(--mx-site-*), mantıksal CSS → RTL. Başlık yoksa blok basılmaz.",
   "version": "1.0.0",
-  "icon": "fullscreen",
+  "icon": "splitscreen",
   "category": "hero",
-  "tags": ["hero", "fullscreen", "parallax", "video", "tam-ekran", "ar"],
+  "subCategory": "half-panel",
+  "tags": [
+    "hero",
+    "half",
+    "edge-to-edge",
+    "brand",
+    "rtl",
+    "fabrika"
+  ],
   "desing": {
-    "stil": "ortali",
-    "hiza": "orta",
-    "yukseklik": 88,
     "max": "1200px",
+    "bosluk": "clamp(56px, 8vw, 104px)",
+    "yuvarlak": "18px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
     "img": "",
+    "img2": "",
     "video": "",
     "poster": "",
-    "alt": {
-      "tr": "Tesisimizden genel görünüm",
-      "en": "Overview of our facility",
-      "ar": "منظر عام لمنشأتنا"
-    },
-    "overlay": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 28%, #0b1220)",
-    "overlayText": "#ffffff",
-    "accent": "var(--mx-site-primary, #2563eb)",
-    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
-    "bg": "var(--mx-site-bg, #ffffff)",
-    "radius": "16px",
-    "eyebrow": {
-      "tr": "1998'den beri",
-      "en": "Since 1998",
-      "ar": "منذ عام 1998"
-    },
-    "title": {
-      "tr": "Her projede aynı özen, aynı kalite",
-      "en": "The same care and quality in every project",
-      "ar": "العناية نفسها والجودة نفسها في كل مشروع"
-    },
-    "metin": {
-      "tr": "Modern tesisimiz ve deneyimli ekibimizle sektörün ihtiyaçlarına uçtan uca çözüm üretiyoruz.",
-      "en": "With our modern facility and experienced team we deliver end-to-end solutions for the industry.",
-      "ar": "بمنشأتنا الحديثة وفريقنا ذي الخبرة نقدّم حلولًا متكاملة لاحتياجات القطاع."
-    },
-    "cta1": {
-      "tr": "Bize ulaşın",
-      "en": "Contact us",
-      "ar": "تواصل معنا"
-    },
-    "cta1_url": "iletisim",
-    "cta2": {
-      "tr": "Referanslar",
-      "en": "References",
-      "ar": "مراجعنا"
-    },
-    "cta2_url": "referanslar",
-    "scroll_label": {
-      "tr": "Aşağı kaydır",
-      "en": "Scroll down",
-      "ar": "مرّر للأسفل"
-    }
+    "alt": "",
+    "cta_ad": "",
+    "cta_url": "",
+    "cta2_ad": "",
+    "cta2_url": "",
+    "rozet_ikon": "",
+    "rozet_deger": "",
+    "rozet_metin": "",
+    "bg": "var(--mx-site-primary, #2563eb)",
+    "text": "var(--mx-site-primary-contrast, #ffffff)",
+    "muted": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 92%, var(--mx-site-primary, #2563eb))",
+    "kartBg": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 10%, transparent)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 28%, transparent)",
+    "accent": "var(--mx-site-primary-contrast, #ffffff)",
+    "accentInk": "var(--mx-site-primary-contrast, #ffffff)",
+    "accentText": "var(--mx-site-primary, #2563eb)",
+    "vurguBg": "var(--mx-site-primary-contrast, #ffffff)",
+    "vurguText": "var(--mx-site-primary, #2563eb)",
+    "bgcolor": "var(--mx-site-primary, #2563eb)",
+    "color": "var(--mx-site-primary-contrast, #ffffff)"
   },
   "data": [],
   "veri": {
     "statik": true,
     "dinamik": false,
-    "kaynak": "desing/data"
+    "kaynak": "desing/data",
+    "alanlar": {
+      "ikon": "madde ikonu (Material Symbols)",
+      "deger": "sayı/değer (ör. 1.200+, dil sözlüğü olabilir)",
+      "metin": "madde metni (dil sözlüğü)",
+      "img": "madde görseli (mozaik yerleşimlerde)",
+      "url": "madde bağlantısı"
+    }
   }
 }

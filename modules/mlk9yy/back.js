@@ -1,77 +1,111 @@
-/* hero-5 — Tam ekran parallax/video hero (31 Eki 2026, G8-A).
-   Yer tutucular: h5stil h5hiza h5yk h5medya h5ctalar — koşulsuz yerleştirilir. Metinler desing {tr,en,ar} (moduleRender çözer).
-   Medya: video varsa poster ZORUNLU (yoksa video basılmaz, img'e düşer); reduced-motion'da CSS videoyu gizler → poster/img görünür.
-   wmPickLang güvenli sarmal; yalnız var + klasik for (rust.md § Modul teknik). */
-function h5Dil(v) {
-  if (v == null) { return ""; }
-  if (typeof v !== "object") { return String(v); }
+/* acilis-yarim-panel — Açılış Yarım Panel — kenardan kenara görsel yarısı + marka renkli panel (15 Kas 2026 · mcp:webmaker/20261115-224259-bpa9 · D17).
+   Bölüm iki eşit yarı ve kenardan kenara: bir yarı kesintisiz görsel, öbür yarı marka renginde panelde etiket, h1, metin, düğmeler ve ayraçlı maddeler.
+   Üretici: scripts/modul-fabrika (aile hero) — elle düzenleme yerine tanımı değiştirip yeniden üret.
+   Veri: desing: ust · baslik · metin · img · img2 · video/poster · alt · cta_ad/cta_url · cta2_ad/cta2_url · rozet_*; data (kısa maddeler/sayılar): [{ ikon?, deger?, metin?, img?, url? }] — metinler dil sözlüğü. */
+const P = "modulex-acilis-yarim-panel";
+const IMG_KOK = "/img/";
+/* --- ortak ön ek (scripts/modul-fabrika/on-ek.js) — dil · güvenlik · sayı yardımcıları --- */
+const pick = (v) => {
+  if (v == null) return "";
+  if (typeof v !== "object") return String(v);
   if (typeof wmPickLang === "function") { try { return wmPickLang(v, json.lang) || ""; } catch (e) { /* alt satır */ } }
-  return v[json.lang] != null ? String(v[json.lang]) : (v.tr != null ? String(v.tr) : (v.en != null ? String(v.en) : ""));
-}
-function h5Esc(s) {
-  return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-}
-function h5Url(v) {
-  var s = String(v == null ? "" : v).trim();
-  if (!s) { return ""; }
-  if (/^\s*(javascript|vbscript|file):/i.test(s)) { return ""; }
-  if (/^data:/i.test(s)) { return /^data:(image|video)\//i.test(s) ? s : ""; }
-  if (s.charAt(0) === "/" || /^https?:\/\//i.test(s)) { return s; }
-  return "/img/" + s;
-}
-function h5Href(v) {
-  var s = String(v == null ? "" : v).trim();
-  if (!s) { return ""; }
-  if (/^\s*(javascript|vbscript|data):/i.test(s)) { return ""; }
-  if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s)) { return s; }
+  return String(v[json.lang] ?? Object.values(v)[0] ?? "");
+};
+const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+const medyaUrl = (v) => {
+  const s = String(v ?? "").trim();
+  if (!s || /^\s*(javascript|vbscript|file):/i.test(s)) return "";
+  if (/^data:/i.test(s)) return /^data:(image|video|audio)\//i.test(s) ? s : "";
+  if (s.startsWith("/") || /^https?:\/\//i.test(s)) return s;
+  return `${IMG_KOK}${s}`;
+};
+const href = (v) => {
+  const s = String(v ?? "").trim();
+  if (!s || /^\s*(javascript|vbscript|data):/i.test(s)) return "";
+  if (/^(https?:)?\/\//i.test(s) || /^(mailto:|tel:|#)/i.test(s)) return s;
   return wxLangInternalHref(s);
-}
-
-var h5Des = json.desing || {};
-
-var h5Stil = String(h5Des.stil || "ortali").trim();
-if (h5Stil !== "ortali" && h5Stil !== "sol" && h5Stil !== "alt-serit") { h5Stil = "ortali"; }
-var h5Hiza = String(h5Des.hiza || "orta").trim();
-if (h5Hiza !== "orta" && h5Hiza !== "sol") { h5Hiza = "orta"; }
-
-/* yükseklik: vh sayısı, 50–100 arası; CSS min 480px ayrıca uygular */
-var h5Yk = parseInt(h5Des.yukseklik, 10);
-if (!isFinite(h5Yk)) { h5Yk = 88; }
-h5Yk = Math.min(100, Math.max(50, h5Yk));
-
-/* medya */
-var h5Img = h5Url(h5Des.img);
-var h5Video = h5Url(h5Des.video);
-var h5Poster = h5Url(h5Des.poster) || h5Img;
-var h5Alt = h5Dil(h5Des.alt);
-var h5Medya = "";
-if (h5Video && h5Poster) {
-  h5Medya = '<img src="' + h5Esc(h5Poster) + '" alt="" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" />' +
-    '<video muted loop playsinline autoplay preload="metadata" poster="' + h5Esc(h5Poster) + '" tabindex="-1">' +
-    '<source src="' + h5Esc(h5Video) + '" /></video>';
-} else if (h5Img) {
-  h5Medya = '<img src="' + h5Esc(h5Img) + '" alt="' + h5Esc(h5Alt) + '" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async" />';
-} else {
-  h5Medya = '<div class="modulex-h5-ph" role="img" aria-label="' + h5Esc(h5Alt) + '"></div>';
-}
-
-/* CTA'lar */
-var h5Ctalar = "";
-var h5C1 = h5Dil(h5Des.cta1).trim();
-var h5C1Url = h5Href(h5Des.cta1_url);
-if (h5C1 && h5C1Url) {
-  h5Ctalar += '<a class="modulex-h5-cta modulex-h5-cta--dolgu" href="' + h5Esc(h5C1Url) + '">' + h5Esc(h5C1) +
-    '<span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>';
-}
-var h5C2 = h5Dil(h5Des.cta2).trim();
-var h5C2Url = h5Href(h5Des.cta2_url);
-if (h5C2 && h5C2Url) {
-  h5Ctalar += '<a class="modulex-h5-cta modulex-h5-cta--cerceve" href="' + h5Esc(h5C2Url) + '">' + h5Esc(h5C2) + "</a>";
-}
-
+};
+const dogru = (v, d) => (v === undefined || v === null || v === "") ? d : !(v === false || v === "false" || v === 0 || v === "0");
+const ikonAd = (v) => String(v ?? "").trim().replace(/[^a-z0-9_]/gi, "");
+const satirlar = (s) => esc(s).replace(/\r?\n/g, "<br />");
+/* ilk dolu alan: yeni ad önce, eski kuşak şablonun adı yedek (G6 yalnız path değiştirerek takas eder) */
+const ilk = (o, ks) => {
+  for (const k of ks) {
+    const v = o == null ? undefined : o[k];
+    if (v == null || v === "") continue;
+    if (typeof v === "object" && !Array.isArray(v) && !Object.keys(v).length) continue;
+    return v;
+  }
+  return "";
+};
+const metinAl = (o, ks) => pick(ilk(o, ks)).trim();
+const { desing: des = {} } = json;
+const setting = webmakerdata?.setting ?? {};
+const veri = Array.isArray(json.data) ? json.data : [];
+const dil = String(json.lang || "");
+const sayiBicim = (v, ondalik) => {
+  try { return new Intl.NumberFormat(dil || undefined, { minimumFractionDigits: ondalik, maximumFractionDigits: ondalik }).format(v); } catch (e) { return String(v); }
+};
+const ikonH = (ad, sinif) => (ad ? `<span class="${sinif} material-symbols-outlined" aria-hidden="true">${ad}</span>` : "");
+const no = (i) => String(i + 1).padStart(2, "0");
+const ctaHtml = () => {
+  const a1 = metinAl(des, ["cta_ad", "button"]); const u1 = href(ilk(des, ["cta_url", "buttonurl", "url"]));
+  const a2 = metinAl(des, ["cta2_ad"]); const u2 = href(ilk(des, ["cta2_url"]));
+  const d = (a, u, ek) => (a && u ? `<a class="${P}-dugme${ek}" href="${esc(u)}">${esc(a)}<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span></a>` : "");
+  const ic = d(a1, u1, "") + d(a2, u2, ` ${P}-dugme--ikincil`);
+  return ic ? `<div class="${P}-cta">${ic}</div>` : "";
+};
+const basHtml = (B, ek) => {
+  if (!B.ust && !B.baslik && !B.metin && !ek) return "";
+  return `<header class="${P}-bas">`
+    + (B.ust ? `<p class="${P}-ust">${esc(B.ust)}</p>` : "")
+    + (B.baslik ? `<h2 class="${P}-baslik" id="${P}-{{id}}-b">${esc(B.baslik)}</h2>` : "")
+    + (B.metin ? `<p class="${P}-metin">${satirlar(B.metin)}</p>` : "")
+    + (ek || "")
+    + "</header>";
+};
+/* --- aile: hero --- */
+const IMG = medyaUrl(pick(ilk(des, ["img", "image", "gorsel"])));
+const IMG2 = medyaUrl(pick(ilk(des, ["img2", "image2"])));
+const VID = medyaUrl(pick(ilk(des, ["video"])));
+const POS = medyaUrl(pick(ilk(des, ["poster"]))) || IMG;
+const ALT = metinAl(des, ["alt"]);
+/* düğmeler: yeni ad önce, hero-5 cta1 · hero-1 btn1 · hero-2 btn1Text adları yedek */
+const DV = [[["cta_ad", "cta1_ad", "cta1", "btn1", "btn1Text", "button"], ["cta_url", "cta1_url", "btn1_url", "btn1Url", "buttonurl"]], [["cta2_ad", "cta2", "btn2", "btn2Text"], ["cta2_url", "btn2_url", "btn2Url"]]]
+  .map((x) => ({ ad: metinAl(des, x[0]), url: href(pick(ilk(des, x[1]))) })).filter((d) => d.ad && d.url);
+const dugH = (ek) => (DV.length ? `<div class="${P}-cta${ek ? ` ${ek}` : ""}">${DV.map((d, i) => `<a class="${P}-dugme${i ? ` ${P}-dugme--ikincil` : ""}" href="${esc(d.url)}">${esc(d.ad)}${i ? "" : `<span class="material-symbols-outlined mx-flip" aria-hidden="true">arrow_forward</span>`}</a>`).join("")}</div>` : "");
+/* maddeler: data (yeni + hero-4 {icon,text} + hero-6 {deger,etiket,img}) yoksa hero-1 stats borusu, hero-3 statN */
+const yeniOge = veri.map((o) => ({
+  ikon: ikonAd(ilk(o, ["ikon", "icon"])), deger: metinAl(o, ["deger", "value", "number", "sayi"]),
+  metin: metinAl(o, ["metin", "text", "etiket", "label", "baslik", "title", "name"]), img: medyaUrl(pick(ilk(o, ["img", "image"]))),
+  url: href(pick(ilk(o, ["url", "link"]))),
+})).filter((k) => k.metin || k.deger);
+const boru = metinAl(des, ["stats"]).split("|").map((x) => x.trim());
+const boruOge = [];
+for (let i = 0; i + 1 < boru.length; i += 2) if (boru[i] || boru[i + 1]) boruOge.push({ ikon: "", deger: boru[i], metin: boru[i + 1], img: "", url: "" });
+const statOge = [1, 2, 3, 4].map((n) => ({ ikon: "", deger: metinAl(des, ["stat" + n + "Value"]), metin: metinAl(des, ["stat" + n + "Label"]), img: "", url: "" })).filter((k) => k.deger || k.metin);
+const kayitlar = yeniOge.length ? yeniOge : boruOge.concat(statOge);
+const RZ = { ikon: ikonAd(ilk(des, ["rozet_ikon", "badge_icon"])), deger: metinAl(des, ["rozet_deger", "badge_value"]), metin: metinAl(des, ["rozet_metin", "badge_label"]) };
+const rzH = (s) => (RZ.deger || RZ.metin ? `<p class="${P}-${s || "rozet"}">${ikonH(RZ.ikon, `${P}-rikon`)}${RZ.deger ? `<strong class="${P}-rdeger">${esc(RZ.deger)}</strong>` : ""}${RZ.metin ? `<span class="${P}-rmetin">${esc(RZ.metin)}</span>` : ""}</p>` : "");
+const ustH = (B, s) => (B.ust ? `<p class="${P}-ust${s ? ` ${P}-${s}` : ""}">${esc(B.ust)}</p>` : "");
+const h1H = (B, ek) => `<h1 class="${P}-h1${ek ? ` ${ek}` : ""}" id="${P}-{{id}}-b">${esc(B.baslik)}</h1>`;
+const metH = (B) => (B.metin ? `<p class="${P}-metin">${satirlar(B.metin)}</p>` : "");
+/* ilk görsel LCP: eager + fetchpriority; sonrakiler lazy */
+const medH = (src, s, w, h, gec, alt) => (src ? `<img class="${P}-${s}" src="${esc(src)}" alt="${esc(alt == null ? ALT : alt)}" width="${w || 1600}" height="${h || 1000}" ${gec ? `loading="lazy"` : `loading="eager" fetchpriority="high"`} decoding="async" />` : "");
+const ogeH = (k, s) => `<li class="${P}-${s || "oge"}">${ikonH(k.ikon, `${P}-oikon`)}${k.deger ? `<strong class="${P}-odeger">${esc(k.deger)}</strong>` : ""}${k.metin ? `<span class="${P}-ometin">${k.url ? `<a class="${P}-obag" href="${esc(k.url)}">${esc(k.metin)}</a>` : esc(k.metin)}</span>` : ""}</li>`;
+const listeH = (ic, s) => (ic ? `<ul class="${P}-${s || "ogeler"}" role="list">${ic}</ul>` : "");
+/* --- modül: acilis-yarim-panel --- */
+const kart = (k) => ogeH(k);
+const sar = (ic, A, B) => `<div class="${P}-yarim${IMG ? "" : ` ${P}-yarim--tek`}">${IMG ? `<figure class="${P}-gorselk">${medH(IMG, "gorsel", 1200, 1200)}</figure>` : ""}<div class="${P}-panel ${P}-gir">${ustH(B)}${h1H(B)}${metH(B)}${dugH()}${listeH(ic)}</div></div>`;
+const B = { ust: metinAl(des, ["ust","eyebrow","badge","kicker"]), baslik: metinAl(des, ["baslik","title"]), metin: metinAl(des, ["metin","description"]) };
+/* veri yoksa gövde hiç kurulmaz (sarmalayıcı boş listeye dokunmaz) */
+const BOS = !B.baslik;
+const govde = BOS ? "" : sar(kayitlar.map((k, i) => kart(k, i, kayitlar.length, kayitlar)).join(""), kayitlar, B);
+const bas = "";
+const sinif = (bas || B.ust || B.baslik || B.metin ? "" : ` ${P}--bassiz`);
 html = html
-  .replace(/\{\{h5stil\}\}/g, function () { return h5Stil; })
-  .replace(/\{\{h5hiza\}\}/g, function () { return h5Hiza; })
-  .replace(/\{\{h5yk\}\}/g, function () { return String(h5Yk); })
-  .replace(/\{\{h5medya\}\}/g, function () { return h5Medya; })
-  .replace(/\{\{h5ctalar\}\}/g, function () { return h5Ctalar; });
+  .replaceAll("{{fbsinif}}", () => sinif)
+  .replaceAll("{{fbetiket}}", () => (B.baslik ? `aria-labelledby="${P}-{{id}}-b"` : ""))
+  .replaceAll("{{fbbas}}", () => bas)
+  .replaceAll("{{fbgovde}}", () => govde);
+if (BOS) html = "";

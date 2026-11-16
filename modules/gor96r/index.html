@@ -1,217 +1,102 @@
-<section class="modulex-pricing">
-  <div class="modulex-pricing-container">
-    <div class="modulex-pricing-header">
-      <div class="modulex-pricing-badge">{{badge}}</div>
-      <h2 class="modulex-pricing-title">{{title}}</h2>
-      <p class="modulex-pricing-desc">{{description}}</p>
-    </div>
-    <div class="modulex-pricing-grid">
-      {{html}}
-    </div>
+<section class="modulex-fiyat-yatay-satir{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-fiyat-yatay-satir-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  .modulex-pricing {
-    width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
-  }
+  /* fiyat-yatay-satir — Kart ızgarası değil liste: paketler yukarıdan aşağı karşılaştırılır, özellikler dikey liste yerine çip; dar ekranda satır karta döner. */
+  .modulex-fiyat-yatay-satir { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-fiyat-yatay-satir *, .modulex-fiyat-yatay-satir *::before, .modulex-fiyat-yatay-satir *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-fiyat-yatay-satir :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-fiyat-yatay-satir :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-fiyat-yatay-satir :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-fiyat-yatay-satir :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-fiyat-yatay-satir img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-fiyat-yatay-satir) img { height: auto; }
+  .modulex-fiyat-yatay-satir [hidden] { display: none !important; }
+  .modulex-fiyat-yatay-satir :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-fiyat-yatay-satir :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-fiyat-yatay-satir-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-fiyat-yatay-satir-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-fiyat-yatay-satir--bassiz .modulex-fiyat-yatay-satir-bas { display: none; }
+  .modulex-fiyat-yatay-satir-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-fiyat-yatay-satir-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-fiyat-yatay-satir-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-fiyat-yatay-satir-bas { max-width: 760px; }
+  .modulex-fiyat-yatay-satir-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-fiyat-yatay-satir-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-fiyat-yatay-satir-dugme:hover { transform: translateY(-2px); }
+  .modulex-fiyat-yatay-satir-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-fiyat-yatay-satir-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-fiyat-yatay-satir-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-pricing-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
+  .modulex-fiyat-yatay-satir-tutar { font-family: var(--mx-font-heading, inherit); font-size: clamp(2rem, 3.6vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .modulex-fiyat-yatay-satir-donem { margin-inline-start: 6px; color: --muted--; font-size: 0.95rem; font-weight: 600; }
+  .modulex-fiyat-yatay-satir-fiyat { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px; }
+  .modulex-fiyat-yatay-satir-pad { font-size: 1.2rem; font-weight: 750; letter-spacing: -0.01em; }
+  .modulex-fiyat-yatay-satir-not { color: --muted--; }
+  .modulex-fiyat-yatay-satir-oz { display: grid; gap: 10px; }
+  .modulex-fiyat-yatay-satir-oz li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+  .modulex-fiyat-yatay-satir-oz .material-symbols-outlined { flex: none; display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: color-mix(in srgb, --accent-- 14%, transparent); color: --accentInk--; font-size: 16px; }
+  .modulex-fiyat-yatay-satir-rozet { display: inline-flex; align-items: center; justify-self: start; min-height: 28px; padding: 4px 12px; border-radius: 999px; background: --accent--; color: --accentText--; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+  .modulex-fiyat-yatay-satir-pcta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: transparent; color: --text--; font-weight: 700; text-decoration: none; transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease; }
+  .modulex-fiyat-yatay-satir-pcta:hover { background: --accent--; color: --accentText--; transform: translateY(-2px); }
+  .modulex-fiyat-yatay-satir-pcta .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-pricing-header {
-    text-align: center;
-    margin-bottom: 48px;
+  .modulex-fiyat-yatay-satir-liste { display: grid; gap: 14px; }
+  .modulex-fiyat-yatay-satir-satir { display: grid; grid-template-columns: minmax(180px, 1fr) minmax(0, 1.6fr) auto; align-items: center; gap: 20px clamp(20px, 3vw, 40px); padding: clamp(20px, 2.6vw, 28px) clamp(20px, 3vw, 32px); border: 1px solid --cizgi--; border-radius: --yuvarlak--; background: --kartBg--; transition: border-color 0.3s ease, transform 0.3s ease, opacity 0.5s ease; }
+  .modulex-fiyat-yatay-satir--hazir:not(.modulex-fiyat-yatay-satir--gor) .modulex-fiyat-yatay-satir-satir { opacity: 0; transform: translateY(14px); }
+  .modulex-fiyat-yatay-satir--gor .modulex-fiyat-yatay-satir-satir { transition-delay: calc(var(--sira) * 80ms); }
+  .modulex-fiyat-yatay-satir-satir:hover { border-color: --accent--; }
+  .modulex-fiyat-yatay-satir-satir--vurgu { border: 2px solid --accent--; background: color-mix(in srgb, --accent-- 7%, --kartBg--); }
+  .modulex-fiyat-yatay-satir-bas2 { display: grid; gap: 6px; }
+  .modulex-fiyat-yatay-satir-cipler { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-fiyat-yatay-satir-cipler li { padding: 6px 12px; border: 1px solid --cizgi--; border-radius: 999px; background: --bg--; font-size: 0.9rem; line-height: 1.3; }
+  .modulex-fiyat-yatay-satir-son { display: grid; justify-items: end; gap: 12px; text-align: end; }
+  .modulex-fiyat-yatay-satir-son .modulex-fiyat-yatay-satir-fiyat { justify-content: flex-end; }
+  .modulex-fiyat-yatay-satir-satir--vurgu .modulex-fiyat-yatay-satir-pcta { background: --accent--; color: --accentText--; }
+  @media (max-width: 1024px) {
+    .modulex-fiyat-yatay-satir-satir { grid-template-columns: minmax(0, 1fr) auto; }
+    .modulex-fiyat-yatay-satir-cipler { grid-column: 1 / -1; grid-row: 2; }
   }
-
-  .modulex-pricing-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-pricing-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-pricing-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-    align-items: stretch;
-  }
-
-  .modulex-pricing-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background: --cardbg--;
-    border: 1px solid --bordercolor--;
-    border-radius: 16px;
-    padding: 32px 26px;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: modulexPricingIn 0.5s ease both;
-  }
-
-  .modulex-pricing-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
-  }
-
-  .modulex-pricing-card.modulex-pricing-featured {
-    border: 2px solid --accent--;
-    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.1);
-  }
-
-  .modulex-pricing-flag {
-    position: absolute;
-    top: -14px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    padding: 4px 16px;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 700;
-    white-space: nowrap;
-  }
-
-  .modulex-pricing-plan {
-    font-size: 18px;
-    font-weight: 700;
-    color: --titlecolor--;
-    margin: 0 0 8px;
-  }
-
-  .modulex-pricing-price {
-    display: flex;
-    align-items: baseline;
-    gap: 6px;
-    margin-bottom: 6px;
-  }
-
-  .modulex-pricing-amount {
-    font-size: 40px;
-    font-weight: 800;
-    color: --accent--;
-    line-height: 1;
-  }
-
-  .modulex-pricing-period {
-    font-size: 14px;
-    color: --textcolor--;
-  }
-
-  .modulex-pricing-note {
-    font-size: 13px;
-    color: --textcolor--;
-    margin: 0 0 20px;
-  }
-
-  .modulex-pricing-features {
-    list-style: none;
-    margin: 0 0 26px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-  }
-
-  .modulex-pricing-features li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-    color: --textcolor--;
-  }
-
-  .modulex-pricing-features .material-symbols-outlined {
-    font-size: 18px;
-    color: --accent--;
-    flex-shrink: 0;
-  }
-
-  .modulex-pricing-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 46px;
-    padding: 12px 24px;
-    border-radius: 10px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit #fff → token */
-    font-size: 15px;
-    font-weight: 700;
-    text-decoration: none;
-    cursor: pointer;
-    transition: filter 0.25s ease, transform 0.25s ease;
-    box-sizing: border-box;
-  }
-
-  .modulex-pricing-cta:hover {
-    filter: brightness(1.08);
-    transform: translateY(-2px);
-  }
-
-  @keyframes modulexPricingIn {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   @media (max-width: 768px) {
-    .modulex-pricing {
-      padding: 48px 14px;
-    }
-
-    .modulex-pricing-title {
-      font-size: 26px;
-    }
-
-    .modulex-pricing-grid {
-      grid-template-columns: 1fr;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-fiyat-yatay-satir-satir { grid-template-columns: minmax(0, 1fr); }
+    .modulex-fiyat-yatay-satir-cipler { grid-row: auto; }
+    .modulex-fiyat-yatay-satir-son { justify-items: start; text-align: start; }
+    .modulex-fiyat-yatay-satir-son .modulex-fiyat-yatay-satir-fiyat { justify-content: flex-start; }
   }
 
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-fiyat-yatay-satir :is(.modulex-fiyat-yatay-satir-baslik, .modulex-fiyat-yatay-satir-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-fiyat-yatay-satir-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-fiyat-yatay-satir { padding-inline: 16px; }
+  }
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-fiyat-yatay-satir *, .modulex-fiyat-yatay-satir *::before, .modulex-fiyat-yatay-satir *::after { animation: none !important; transition: none !important; }
   }
 </style>
+<script>
+  (() => {
+    const P = "modulex-fiyat-yatay-satir";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const gozlem = (s, P, az) => {
+        const gor = () => s.classList.add(P + "--gor");
+        s.classList.add(P + "--hazir");
+        if (az || !("IntersectionObserver" in window)) { gor(); return; }
+        const io = new IntersectionObserver((gs) => {
+          gs.forEach((g) => { if (g.isIntersecting) { gor(); io.disconnect(); } });
+        }, { threshold: 0.15 });
+        io.observe(s);
+      };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      gozlem(s, P, az);
+    });
+  })();
+</script>

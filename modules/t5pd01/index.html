@@ -1,3 +1,6 @@
+<div class="modulex-title f36">
+  <h1>{{name}}</h1>
+</div>
 <div class="modulex">
   <div class="modulex-menu-btn">
     <span>@menu@</span>
@@ -5,8 +8,8 @@
   </div>
   <div class="modulex-menu">{{pagelist}}</div>
   <div class="modulex-desc">
-    <div class="modulex-body">{{text}}</div>
     {{descimg}}
+    <div class="modulex-body">{{text}}</div>
   </div>
 </div>
 <style>
@@ -118,17 +121,66 @@
     z-index: 1;
   }
 
-  .modulex-title span {
+  .modulex-title h1 {
     position: relative;
     z-index: 2;
     font-size: --font-size--px;
+    margin: 0;
   }
 
+  /* R17 — kurumsal body HTML: tek section + h2/h3/p/ul (ajan/ortak/admin/rules.md W3§7) */
   .modulex-body {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: left;
+  }
+
+  .modulex-body > section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    line-height: 1.65;
+  }
+
+  .modulex-body section h2 {
+    margin: 0;
+    font-size: 1.35em;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .modulex-body section h3 {
+    margin: 4px 0 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .modulex-body section p {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  .modulex-body section ul,
+  .modulex-body section ol {
+    margin: 0;
+    padding-left: 1.35em;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    list-style: disc !important;
+  }
+
+  .modulex-body section ol {
+    list-style: decimal !important;
+  }
+
+  .modulex-body section li {
+    list-style: inherit !important;
+    margin: 0;
+    line-height: 1.55;
   }
 
   .modulex-img {

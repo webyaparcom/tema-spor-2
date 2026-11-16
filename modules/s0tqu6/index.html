@@ -1,164 +1,81 @@
-<section class="modulex-team">
-  <div class="modulex-team-container">
-    <div class="modulex-team-header">
-      <div class="modulex-team-badge">{{badge}}</div>
-      <h2 class="modulex-team-title">{{title}}</h2>
-      <p class="modulex-team-desc">{{description}}</p>
-    </div>
-    <div class="modulex-team-grid">
-      {{html}}
-    </div>
+<section class="modulex-ekip-genisleyen-serit{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-ekip-genisleyen-serit-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  .modulex-team {
-    width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
-  }
+  /* ekip-genisleyen-serit — Akordeon galeri etkileşimi: tüm ekip tek bakışta, odaktaki kişi büyür; görsel ağırlıklı, dinamik. */
+  .modulex-ekip-genisleyen-serit { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-ekip-genisleyen-serit *, .modulex-ekip-genisleyen-serit *::before, .modulex-ekip-genisleyen-serit *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-ekip-genisleyen-serit :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-ekip-genisleyen-serit :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-ekip-genisleyen-serit :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-ekip-genisleyen-serit :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-ekip-genisleyen-serit img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-ekip-genisleyen-serit) img { height: auto; }
+  .modulex-ekip-genisleyen-serit [hidden] { display: none !important; }
+  .modulex-ekip-genisleyen-serit :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-ekip-genisleyen-serit :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-ekip-genisleyen-serit-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-ekip-genisleyen-serit-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-ekip-genisleyen-serit--bassiz .modulex-ekip-genisleyen-serit-bas { display: none; }
+  .modulex-ekip-genisleyen-serit-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-ekip-genisleyen-serit-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-ekip-genisleyen-serit-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-ekip-genisleyen-serit-bas { max-width: 760px; }
+  .modulex-ekip-genisleyen-serit-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-ekip-genisleyen-serit-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-ekip-genisleyen-serit-dugme:hover { transform: translateY(-2px); }
+  .modulex-ekip-genisleyen-serit-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-ekip-genisleyen-serit-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-ekip-genisleyen-serit-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-team-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
-
-  .modulex-team-header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .modulex-team-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-team-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-team-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-  }
-
-  .modulex-team-card {
-    background: --cardbg--;
-    border: 1px solid --bordercolor--;
-    border-radius: 16px;
-    padding: 28px 20px;
-    text-align: center;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: modulexTeamIn 0.5s ease both;
-  }
-
-  .modulex-team-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
-  }
-
-  .modulex-team-avatar {
-    width: 108px;
-    height: 108px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid --accent--;
-    background: --bordercolor--;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .modulex-team-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .modulex-team-avatar .material-symbols-outlined {
-    font-size: 52px;
-    color: --textcolor--;
-  }
-
-  .modulex-team-name {
-    font-size: 17px;
-    font-weight: 700;
-    color: --titlecolor--;
-    margin: 0 0 4px;
-  }
-
-  .modulex-team-role {
-    font-size: 13px;
-    font-weight: 600;
-    color: --accent--;
-    margin: 0 0 10px;
-  }
-
-  .modulex-team-bio {
-    font-size: 13px;
-    line-height: 1.6;
-    color: --textcolor--;
-    margin: 0;
-  }
-
-  @keyframes modulexTeamIn {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
+  .modulex-ekip-genisleyen-serit-seritler { display: flex; gap: 12px; height: 500px; }
+  .modulex-ekip-genisleyen-serit-dilim { position: relative; display: grid; grid-template-rows: minmax(0, 1fr) auto; flex: 1 1 0; min-width: 0; overflow: hidden; border-radius: --yuvarlak--; background-color: --kartBg--; transition: flex-grow 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .modulex-ekip-genisleyen-serit-seritler:not(:hover) .modulex-ekip-genisleyen-serit-dilim:first-child, .modulex-ekip-genisleyen-serit-dilim:hover, .modulex-ekip-genisleyen-serit-dilim:focus-within { flex-grow: 3.2; }
+  .modulex-ekip-genisleyen-serit-foto { width: 100%; height: 100%; min-height: 0; object-fit: cover; font-size: 2.6rem; }
+  .modulex-ekip-genisleyen-serit-panel { display: grid; gap: 4px; padding: 16px 18px; background-color: --bg--; }
+  .modulex-ekip-genisleyen-serit-ad { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .modulex-ekip-genisleyen-serit-unvan { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .modulex-ekip-genisleyen-serit-ek { display: grid; gap: 10px; max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.5s ease, opacity 0.4s ease; }
+  .modulex-ekip-genisleyen-serit-seritler:not(:hover) .modulex-ekip-genisleyen-serit-dilim:first-child .modulex-ekip-genisleyen-serit-ek, .modulex-ekip-genisleyen-serit-dilim:hover .modulex-ekip-genisleyen-serit-ek, .modulex-ekip-genisleyen-serit-dilim:focus-within .modulex-ekip-genisleyen-serit-ek { max-height: 220px; opacity: 1; padding-block-start: 6px; }
+  .modulex-ekip-genisleyen-serit-bio { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; font-size: 0.9rem; }
   @media (max-width: 768px) {
-    .modulex-team {
-      padding: 48px 14px;
-    }
-
-    .modulex-team-title {
-      font-size: 26px;
-    }
-
-    .modulex-team-grid {
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 16px;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-ekip-genisleyen-serit-seritler { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); height: auto; gap: 10px; }
+    .modulex-ekip-genisleyen-serit-dilim { grid-template-rows: auto auto; }
+    .modulex-ekip-genisleyen-serit-foto { aspect-ratio: 3 / 4; height: auto; }
+    .modulex-ekip-genisleyen-serit-panel { padding: 10px 12px; }
+    .modulex-ekip-genisleyen-serit-ad { white-space: normal; font-size: 1rem; }
+    .modulex-ekip-genisleyen-serit-unvan { white-space: normal; font-size: 0.82rem; }
+    .modulex-ekip-genisleyen-serit-ek, .modulex-ekip-genisleyen-serit-seritler:not(:hover) .modulex-ekip-genisleyen-serit-dilim:first-child .modulex-ekip-genisleyen-serit-ek, .modulex-ekip-genisleyen-serit-dilim:hover .modulex-ekip-genisleyen-serit-ek { display: none; }
   }
+  /* img width/height öznitelikleri CSS yüksekliği olur — aspect-ratio'nun çalışması için yükseklik auto (modül kuralı ezebilir) */
+  :where(.modulex-ekip-genisleyen-serit) img { height: auto; }
+  .modulex-ekip-genisleyen-serit-foto { min-width: 0; }
+  .modulex-ekip-genisleyen-serit-bag { color: inherit; text-decoration: none; }
+  .modulex-ekip-genisleyen-serit-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .modulex-ekip-genisleyen-serit-harf { display: grid; place-items: center; background-color: --vurguBg--; color: --vurguText--; font-weight: 800; letter-spacing: 0.02em; }
+  .modulex-ekip-genisleyen-serit-sosyal { display: flex; flex-wrap: wrap; gap: 8px; }
+  .modulex-ekip-genisleyen-serit-slink { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 40px; min-height: 40px; padding: 0 10px; border: 1px solid --cizgi--; border-radius: 999px; color: inherit; font-size: 0.88rem; text-decoration: none; transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease; }
+  .modulex-ekip-genisleyen-serit-slink:hover { background-color: --accent--; border-color: --accent--; color: --accentText--; }
+  .modulex-ekip-genisleyen-serit-slink .material-symbols-outlined { font-size: 19px; }
+  .modulex-ekip-genisleyen-serit-syazi { overflow-wrap: anywhere; }
+  .modulex-ekip-genisleyen-serit-ad { font-size: 1.12rem; font-weight: 750; line-height: 1.3; }
+  .modulex-ekip-genisleyen-serit-unvan { color: --accentInk--; font-size: 0.92rem; font-weight: 650; }
+  .modulex-ekip-genisleyen-serit-bio { color: --muted--; font-size: 0.95rem; line-height: 1.65; }
+  .modulex-ekip-genisleyen-serit-bolum { color: --muted--; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
 
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ekip-genisleyen-serit :is(.modulex-ekip-genisleyen-serit-baslik, .modulex-ekip-genisleyen-serit-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-ekip-genisleyen-serit-baslik { line-height: 1.35; }
+  @media (max-width: 768px) {
+    .modulex-ekip-genisleyen-serit { padding-inline: 16px; }
+  }
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-ekip-genisleyen-serit *, .modulex-ekip-genisleyen-serit *::before, .modulex-ekip-genisleyen-serit *::after { animation: none !important; transition: none !important; }
   }
 </style>
